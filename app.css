@@ -8,59 +8,50 @@ html {
 }
 
 body {
+  background: url('bg.jpg') center center;
   background-color: #fff;
-  color: #7b7c76;
+  background-size: cover;
+  color: #000;
+  font-size: 1.25em;
   font-weight: lighter;
   height: 100vh;
+  letter-spacing: 0.125em;
+  line-height: 1.5em;
   padding: 1rem;
   width: 100vw;
 }
 
-a, a:hover, a:active, a:focus, a:visited {
-  color: inherit;
-  text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
 }
 
-.profiles {
-  font-size: 1.25em;
-  letter-spacing: 0.125em;
-  list-style-type: none;
-  margin: 0.75em 0;
+section {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+p {
+  margin: 0;
   padding: 0;
 }
 
-.profiles li {
-  color: #333;
-  line-height: 1.25em;
-  margin: 0.2em 0;
+p:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
-.profiles li:before {
-  color: #7b7c76;
-  content: '~>';
-  letter-spacing: 0;
-  margin-right: 0.75em;
-}
-
-.description {
-  color: #333;
-  font-size: 1.5em;
-  font-weight: lighter;
-  letter-spacing: 0.0625em;
-  margin: 0;
+a, a:hover, a:active, a:focus, a:visited {
+  border-bottom: 0.125rem solid #fff;
+  color: inherit;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .word-marker {
   font-weight: bold;
   white-space: nowrap;
-}
-
-@media (min-width: 50em) {
-  .profiles {
-    font-size: 1.875em;
-  }
-
-  .description {
-    font-size: 2em;
-  }
 }
