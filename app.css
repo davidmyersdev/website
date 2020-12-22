@@ -8,47 +8,58 @@ html {
 }
 
 body {
-  background: url('bg.jpg?v=20200712151803') center center;
-  background-color: #fff;
-  background-size: cover;
-  color: #000;
+  background-color: #1a1a1a;
+  color: #ddd;
   font-size: 1.25em;
   font-weight: lighter;
-  height: 100vh;
-  letter-spacing: 0.125em;
+  letter-spacing: 0.1em;
   line-height: 1.5em;
   padding: 1rem;
-  width: 100vw;
+  margin: auto;
+  max-width: 55rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: lighter;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 section {
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.95);
-  color: #fff;
   margin-bottom: 1rem;
-  padding: 1rem;
 }
 
 p {
   margin: 0;
+  margin-bottom: 1rem;
   padding: 0;
 }
 
-p:not(:last-child) {
-  margin-bottom: 1rem;
+a, a:hover, a:active, a:focus, a:visited {
+  color: inherit;
+  font-weight: normal;
+  white-space: nowrap;
 }
 
-a, a:hover, a:active, a:focus, a:visited {
-  border-bottom: 0.125rem solid #fff;
-  color: inherit;
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
-  white-space: nowrap;
+img {
+  margin: 1rem 0;
+  max-width: 100%;
+}
+
+.intro {
+  color: #aaa;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  margin-bottom: -1rem;
+}
+
+.subheading {
+  color: #aaa;
+  margin-top: -1.25rem;
 }
 
 .word-marker {
