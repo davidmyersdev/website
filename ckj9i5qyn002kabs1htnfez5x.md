@@ -15,6 +15,10 @@ This guide is not a comprehensive resource for all available options. Instead, I
 - You **do** want to use Ubuntu 20.04 LTS as your Linux distribution.
 - You **do** want to use the Windows Terminal app.
 
+### A note about WSL 2 performance
+
+While WSL 2 is more performant than WSL 1 in most cases, there is a specific scenario where it can actually perform worse than WSL 1. This occurs when you are working on files across file systems. Specifically, you will want to make sure you store your project files on the Linux file system instead of the Windows file system (assuming you are using Linux utilities). Microsoft explains this in further detail on [Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/compare-versions).
+
 ## Installation
 
 Let's get started!
