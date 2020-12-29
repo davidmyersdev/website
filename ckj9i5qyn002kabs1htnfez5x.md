@@ -79,7 +79,7 @@ The Ubuntu 20.04 LTS app should now be easily searchable in your list of Windows
 
 [Get Windows Terminal](https://aka.ms/terminal) from Microsoft. You will need to click the "Get" link to open the Microsoft Store. From there, you can click "Install" to download and install the app. For more information on Windows Terminal, head over to [Microsoft Docs](https://docs.microsoft.com/en-us/windows/terminal/).
 
-### Set Ubuntu as the default
+### Set Ubuntu as the default shell
 
 To set Ubuntu as the default terminal in Windows Terminal, you will need to edit the `settings.json` file. To open this, click the dropdown arrow next to the new tab button and click on "Settings" near the bottom of the menu that pops up. The file will look something like this (unnecessary info has been removed).
 
@@ -101,7 +101,17 @@ To set Ubuntu as the default terminal in Windows Terminal, you will need to edit
 }
 ```
 
-You just need to update the `defaultProfile` property with the UUID for Ubuntu and save the file. That's it!
+You just need to update the `defaultProfile` property with the UUID for Ubuntu and save the file.
+
+### Use the Linux file system as your default
+
+When you launch Windows Terminal, you _will_ be presented with the Ubuntu shell, but you will be dropped into the Windows file system. As mentioned above, WSL 2 works best when you use the Linux file system. To change your default directory to your Linux user's home directory, you just need to run the following command in the Ubuntu shell (your new default for Windows Terminal).
+
+```shell
+echo 'cd ~' >> ~/.bashrc
+```
+
+You can change `~` to something else if you would like, but the home directory is usually a safe place to land in.
 
 ## Closing
 
