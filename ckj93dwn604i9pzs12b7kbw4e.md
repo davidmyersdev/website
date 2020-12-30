@@ -1,12 +1,14 @@
-## An alternative Markdown editor component for Vue
+## An alternative markdown editor component for Vue
 
 [![](https://raw.githubusercontent.com/voraciousdev/octo/master/lib/vue-markdown-editor/images/screenshot.png)](https://github.com/voraciousdev/octo/tree/master/lib/vue-markdown-editor)
 
-One of the biggest challenges I faced while building [Octo](https://github.com/voraciousdev/octo) was the Markdown editor. When it comes to implementing a Markdown text input, there is usually one way to go about it: a **plain text** input field with an optional **preview** mode. This approach obviously works, but the experience can be a bit clunky when writing larger bodies of content. In this article, we will cover an alternative approach that - while being a bit heavier - offers a smoother user experience for the author. This will be accomplished with a standalone Vue component called [vue-markdown-editor](https://github.com/voraciousdev/octo/tree/master/lib/vue-markdown-editor) (MIT-licensed) which was extracted from the core of [Octo](https://github.com/voraciousdev/octo).
+One of the biggest challenges I faced while building [Octo](https://github.com/voraciousdev/octo) was the markdown editor. When it comes to implementing a markdown text input, there is usually one way to go about it: a **plain text** input field with an optional **preview** mode. This approach obviously works, but the experience can be a bit clunky when writing larger bodies of content.
+
+In this article, we will cover an alternative approach that - while being a bit heavier - offers a smoother user experience for the author. This will be accomplished with a standalone Vue component called [vue-markdown-editor](https://github.com/voraciousdev/octo/tree/master/lib/vue-markdown-editor) (MIT-licensed) which was extracted from the core of [Octo](https://github.com/voraciousdev/octo). This component acts as a plain text input, but it renders headers, syntax highlighting, and images in place. This is especially helpful for overall readability and catching syntax errors without interrupting focus by switching between edit and preview panels. Feel free to try it out at [octo.app](https://octo.app)!
 
 ## Create a new Vue project
 
-To kick things off, we need to create a new Vue project. We will create a _bare_ project with the `-b` flag and use the _default_ presets with the `-d` flag.
+To kick things off, we need to create a new Vue project. We will create a _bare_ project with the `-b` flag and use the _default_ presets with the `-d` flag. The default preset uses `yarn`, but the snippets below will include the corresponding `npm` commands as well.
 
 ```shell
 # create and open the project
@@ -18,32 +20,36 @@ vue create -b -d playground && cd playground
 Next, we will install the Markdown editor component.
 
 ```shell
-# yarn is the default preset
+# yarn (the default preset)
 yarn add @voraciousdev/vue-markdown-editor
+
+# npm
+npm install --save @voraciousdev/vue-markdown-editor
 ```
 
 ## Implement the editor
 
-Implementation is pretty straightforward. We just need to import, register, and then use the new component. This is no different than importing another component from a relative path. Note the use of `v-model` on the `MarkdownEditor` component. This is the simplest way to bind our own data to the component.
+We need to import, register, and then use the new component. This is no different than importing another component from a relative path. Note the use of `v-model` on the `MarkdownEditor` component. This is the simplest way to bind our own data to the markdown editor.
 
 ```vue
 <!-- src/App.vue -->
 <template>
   <div class="app">
     <h1>Playground</h1>
-    <!-- use -->
+    <!-- use the registered component -->
     <MarkdownEditor v-model="markdown" class="editor" />
   </div>
 </template>
 
 <script>
-// import
+// import MarkdownEditor from the package
 import MarkdownEditor from '@voraciousdev/vue-markdown-editor'
 
 export default {
   name: 'App',
   components: {
-    // register
+    // register the component as MarkdownEditor
+    // this step is what allows us to reference <MarkdownEditor/> in the template
     MarkdownEditor,
   },
   data() {
@@ -80,7 +86,11 @@ body {
 All we have to do now is run the app and play around with the editor!
 
 ```shell
+# yarn (the default preset)
 yarn serve
+
+# npm
+npm run serve
 ```
 
 ## Final result
