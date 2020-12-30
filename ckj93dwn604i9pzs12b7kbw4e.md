@@ -1,4 +1,4 @@
-## An alternative markdown editor component for Vue
+## An Introduction to vue-markdown-editor
 
 [![](https://raw.githubusercontent.com/voraciousdev/octo/master/lib/vue-markdown-editor/images/screenshot.png)](https://github.com/voraciousdev/octo/tree/master/lib/vue-markdown-editor)
 
