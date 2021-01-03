@@ -113,7 +113,15 @@ This installs Node from the Ubuntu package repositories. The latest version avai
 sudo apt install -y nodejs
 ```
 
-## Atom
+## Docker
+
+Download and install [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows). To enable Docker for WSL 2, make sure the **Install required Windows components for WSL 2** option is checked. Log out and log back in to finish the installation.
+
+## Text Editor
+
+Using a traditional text editor with the WSL will require some extra configuration depending on the one you choose.
+
+### Atom
 
 Launching Atom from within WSL is not as simple as you might think. The `atom` binary needs to be executed in a Windows `cmd` context, and it needs the _Windows_ path of the specified directory instead of the Linux path. I created a [little helper script](https://gist.github.com/voraciousdev/1a1473ea36906c8f6830a17701e7fd21) to do exactly that. Download it to the `/usr/local/bin` directory and make it executable by running the following commands.
 
@@ -138,9 +146,20 @@ atom ~/workspace/project
 atom
 ```
 
-## Docker
+### VS Code
 
-Download and install [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows). To enable Docker for WSL 2, make sure the **Install required Windows components for WSL 2** option is checked. Log out and log back in to finish the installation.
+Download and install [VS Code](https://code.visualstudio.com/). When you open VS Code for the first time, it will prompt you to install recommended extensions. One of the recommended extensions will be [Remote Development](https://aka.ms/vscode-remote/download/extension). Here are a few examples of how to use the new `code` command from the WSL terminal.
+
+```shell
+# open the current directory
+code .
+
+# open another directory
+code ~/workspace/project
+
+# open vscode without specifying a project
+code
+```
 
 ## Closing
 
