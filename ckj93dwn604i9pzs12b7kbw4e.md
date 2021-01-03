@@ -4,7 +4,7 @@
 
 One of the biggest challenges I faced while building [Octo](https://github.com/voraciousdev/octo) was the markdown editor. When it comes to implementing a markdown text input, there is usually one way to go about it: a **plain text** input field with an optional **preview** mode. This approach obviously works, but the experience can be a bit clunky when writing larger bodies of content.
 
-In this article, we will cover an alternative approach that - while being a bit heavier - offers a smoother user experience for the author. This will be accomplished with a standalone Vue component called [vue-markdown-editor](https://github.com/voraciousdev/octo/tree/master/lib/vue-markdown-editor) (MIT-licensed) which was extracted from the core of [Octo](https://github.com/voraciousdev/octo). This component acts as a plain text input, but it renders headers, syntax highlighting, and images in place. This is especially helpful for overall readability and catching syntax errors without interrupting focus by switching between edit and preview panels. Feel free to try it out at [octo.app](https://octo.app)!
+In this article, we will cover an alternative approach that - while being a bit heavier - offers a smoother user experience for the author. This will be accomplished with a standalone Vue component called [vue-markdown-editor](https://github.com/voraciousdev/vue-markdown-editor) (MIT-licensed) which was extracted from the core of [Octo](https://github.com/voraciousdev/octo). This component acts as a plain text input, but it renders headers, syntax highlighting, and images in place. This is especially helpful for overall readability and catching syntax errors without interrupting focus by switching between edit and preview panels. Feel free to try it out at [octo.app](https://octo.app)!
 
 ## Create a new Vue project
 
@@ -101,6 +101,6 @@ This component was designed to be as simple to use as a `textarea`. Content is k
 
 ## Closing
 
-This example project is on [GitHub](https://github.com/voraciousdev/octo/tree/master/lib/vue-markdown-editor/examples/playground).
+This example project is on [GitHub](https://github.com/voraciousdev/vue-markdown-editor/tree/master/examples/playground).
 
 All in all, this article was pretty simple, but I really wanted to show off this new Vue component. It's open source and now available for anyone to use. I will continue to work on and improve this component because it powers my open source Markdown editor [Octo](https://github.com/voraciousdev/octo) (which I used to write this article). Both are MIT-licensed and available for anyone to use. I would greatly appreciate any feedback, and I hope you have a fantastic day!
