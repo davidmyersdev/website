@@ -1,6 +1,6 @@
 ## An Introduction to vue-markdown-editor
 
-[![](https://raw.githubusercontent.com/voraciousdev/octo/master/lib/vue-markdown-editor/images/screenshot.png)](https://github.com/voraciousdev/vue-markdown-editor)
+[![](https://raw.githubusercontent.com/voraciousdev/vue-markdown-editor/master/images/screenshot.png)](https://github.com/voraciousdev/vue-markdown-editor)
 
 One of the biggest challenges I faced while building [Octo](https://github.com/voraciousdev/octo) was the markdown editor. When it comes to implementing a markdown text input, there is usually one way to go about it: a **plain text** input field with an optional **preview** mode. This approach obviously works, but the experience can be a bit clunky when writing larger bodies of content.
 
