@@ -10,7 +10,7 @@ In this article, we will cover an alternative approach that - while being a bit 
 
 To kick things off, we need to create a new Vue project. We will create a _bare_ project with the `-b` flag and use the _default_ presets with the `-d` flag. The default preset uses `yarn`, but the snippets below will include the corresponding `npm` commands as well.
 
-```shell
+```bash
 # create and open the project
 vue create -b -d playground && cd playground
 ```
@@ -19,7 +19,7 @@ vue create -b -d playground && cd playground
 
 Next, we will install the Markdown editor component.
 
-```shell
+```bash
 # yarn (the default preset)
 yarn add @voraciousdev/vue-markdown-editor
 
@@ -31,7 +31,7 @@ npm install --save @voraciousdev/vue-markdown-editor
 
 We need to import, register, and then use the new component. This is no different than importing another component from a relative path. Note the use of `v-model` on the `MarkdownEditor` component. This is the simplest way to bind our own data to the markdown editor.
 
-```vue
+```html
 <!-- src/App.vue -->
 <template>
   <div class="app">
@@ -85,7 +85,7 @@ body {
 
 All we have to do now is run the app and play around with the editor!
 
-```shell
+```bash
 # yarn (the default preset)
 yarn serve
 
