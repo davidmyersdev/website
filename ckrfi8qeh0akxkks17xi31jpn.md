@@ -1,4 +1,4 @@
-## A Primer on Agile for Web Development
+## What's the deal with Agile?
 
 Many of you will likely work in some type of Agile environment in your career. While there are many methodologies, it's important to understand a few of the key concepts that are shared across them. This article will serve as a brief primer on Agile.
 
