@@ -1,6 +1,6 @@
 ## A Guide to Customizing the Zsh Shell Prompt
 
-![](https://i.imgur.com/s8RVMid.png)
+![](https://i.imgur.com/nCWDdyi.png)
 
 The goal of this article is to teach you just enough about the shell prompt to make some helpful customizations. 
 
