@@ -1,7 +1,5 @@
 ## A Guide to Customizing the Zsh Shell Prompt
 
-![](https://i.imgur.com/nCWDdyi.png)
-
 The goal of this article is to teach you just enough about the shell prompt to make some helpful customizations. 
 
 ## What is the shell prompt?
