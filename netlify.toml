@@ -3,8 +3,8 @@
   NODE_VERSION = "16"
 
 [build]
-  publish = ".output/public"
-  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
+  publish = ".output"
+  command = "yarn install && yarn build"
 
 [[redirects]]
   from = "/a-practical-guide-to-the-web-cryptography-api"
