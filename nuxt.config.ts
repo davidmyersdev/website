@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
-    '@nuxt/content-edge',
+    '@voraciousdev/nuxt3-content',
   ],
   vueuse: {
     ssrHandlers: true,
