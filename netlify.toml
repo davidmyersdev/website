@@ -4,11 +4,7 @@
 
 [build]
   publish = "dist"
-  command = "yarn install && yarn build"
-
-[[redirects]]
-  from = "/a-practical-guide-to-the-web-cryptography-api"
-  to = "/blog/a-practical-guide-to-the-web-cryptography-api"
+  command = "yarn install && yarn generate"
 
 [[redirects]]
   from = "/*"
