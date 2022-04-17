@@ -1,4 +1,4 @@
-## What's the deal with Agile?
+# What's the deal with Agile?
 
 Many of you will likely work in some type of Agile environment in your career. While there are many methodologies, it's important to understand a few of the key concepts that are shared across them. This article will serve as a brief primer on Agile.
 
@@ -18,7 +18,7 @@ There are two main frameworks for implementing the Agile methodologies: Scrum an
 
 ### The Kanban framework
 
-Kanban is meant to provide the greatest amount of flexibility when it comes to changing priorities. 
+Kanban is meant to provide the greatest amount of flexibility when it comes to changing priorities.
 
 Instead of working on a 1 or 2-week cadence, Kanban is a continuous stream of work. When you finish something, you immediately move on to the next thing. Kanban utilizes a Kanban Board to organize the flow of work into columns. A typical Kanban board (see an example below) might have columns such as (from left to right):
 

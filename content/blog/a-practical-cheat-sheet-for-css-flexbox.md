@@ -1,4 +1,4 @@
-## A Practical Cheat Sheet for CSS Flexbox (Containers)
+# A Practical Cheat Sheet for CSS Flexbox (Containers)
 
 I originally posted this Flexbox cheat sheet [on Twitter](https://twitter.com/voraciousdev/status/1419769440938364928), but the response was so positive that I decided to write it up here too! We will cover the (in my opinion) most common scenarios for Flexbox.
 
@@ -6,24 +6,26 @@ If you just want the cheat sheet (pictured above), [you can download it here](ht
 
 ### Table of Contents
 
-1. [Horizontal Alignment](#horizontal-alignment)
-  * [Anchor group to the center (horizontally)](#anchor-group-to-the-center-horizontally)
-  * [Anchor group to the right side](#anchor-group-to-the-right-side)
-  * [Add space around all items](#add-space-around-all-items)
-  * [Add space between all items](#add-space-between-all-items)
-2. [Vertical Alignment](#vertical-alignment)
-  * [Anchor group to the center (vertically)](#anchor-group-to-the-center-vertically)
-  * [Anchor group to the top](#anchor-group-to-the-top)
-  * [Anchor group to the bottom](#anchor-group-to-the-bottom)
-3. [Perfect (Vertical and Horizontal) Center Alignment](#perfect-vertical-and-horizontal-center-alignment)
-4. [Content Direction](#content-direction)
-  * [Reverse the flow of content (horizontally)](#reverse-the-flow-of-content-horizontally)
-  * [Flow content vertically instead of horizontally](#flow-content-vertically-instead-of-horizontally)
-  * [Reverse the flow of content (vertically)](#reverse-the-flow-of-content-vertically)
-5. [Content Wrapping](#content-wrapping)
-  * [Wrap content to next lines (flow down)](#wrap-content-to-next-lines-flow-down)
-  * [Wrap content to previous lines (flow up)](#wrap-content-to-previous-lines-flow-up)
-6. [Default Behavior](#default-behavior)
+- [A Practical Cheat Sheet for CSS Flexbox (Containers)](#a-practical-cheat-sheet-for-css-flexbox-containers)
+    - [Table of Contents](#table-of-contents)
+  - [Horizontal Alignment](#horizontal-alignment)
+    - [Anchor group to the center (horizontally)](#anchor-group-to-the-center-horizontally)
+    - [Anchor group to the right side](#anchor-group-to-the-right-side)
+    - [Add space around all items](#add-space-around-all-items)
+    - [Add space between all items](#add-space-between-all-items)
+  - [Vertical Alignment](#vertical-alignment)
+    - [Anchor group to the center (vertically)](#anchor-group-to-the-center-vertically)
+    - [Anchor group to the top](#anchor-group-to-the-top)
+    - [Anchor group to the bottom](#anchor-group-to-the-bottom)
+  - [Perfect (Vertical and Horizontal) Center Alignment](#perfect-vertical-and-horizontal-center-alignment)
+  - [Content Direction](#content-direction)
+    - [Reverse the flow of content (horizontally)](#reverse-the-flow-of-content-horizontally)
+    - [Flow content vertically instead of horizontally](#flow-content-vertically-instead-of-horizontally)
+    - [Reverse the flow of content (vertically)](#reverse-the-flow-of-content-vertically)
+  - [Content Wrapping](#content-wrapping)
+    - [Wrap content to next lines (flow down)](#wrap-content-to-next-lines-flow-down)
+    - [Wrap content to previous lines (flow up)](#wrap-content-to-previous-lines-flow-up)
+  - [Default Behavior](#default-behavior)
 
 ## Horizontal Alignment
 

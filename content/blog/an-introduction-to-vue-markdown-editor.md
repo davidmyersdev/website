@@ -1,4 +1,4 @@
-## An Introduction to vue-markdown-editor
+# An Introduction to vue-markdown-editor
 
 [![](https://raw.githubusercontent.com/voraciousdev/vue-markdown-editor/master/images/screenshot.png)](https://github.com/voraciousdev/vue-markdown-editor)
 

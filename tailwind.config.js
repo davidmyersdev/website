@@ -6,11 +6,8 @@ module.exports = {
     extend: {
       colors: {
         darkest: '#121212',
-        gray: colors.trueGray,
+        gray: colors.neutral,
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
 }

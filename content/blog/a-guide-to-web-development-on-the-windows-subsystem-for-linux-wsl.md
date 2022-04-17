@@ -1,4 +1,4 @@
-## A Guide to Web Development on the Windows Subsystem for Linux (WSL)
+# A Guide to Web Development on the Windows Subsystem for Linux (WSL)
 
 This guide assumes you already have the Windows Subsystem for Linux (WSL) 2 installed. If that is not the case, I highly recommend you read through my previous article,  [A Guide to Installing the Windows Subsystem for Linux (WSL) and Windows Terminal](https://voracious.dev/a-guide-to-installing-the-windows-subsystem-for-linux-wsl-and-windows-terminal), first. We are going to cover some of the most common web development tools that we need to get up and running, but there might be something missing. If that is the case, please leave a comment below! While I am using my own experience as a foundation, I am happy to amend this article as needed to make sure we cover the most common tools.
 

@@ -6,7 +6,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <nav class="flex flex-col justify-between bg-darkest mb-12 lg:mb-20 gap-8 lg:flex-row">
+  <nav class="flex flex-col justify-between bg-darkest mb-12 gap-4 lg:mb-20 lg:gap-8 lg:flex-row">
     <div class="flex items-center justify-between">
       <div class="flex items-center">
         <NuxtLink class="p-4" to="/">David R. Myers</NuxtLink>
@@ -18,14 +18,13 @@ const toggleMenu = () => {
       </button>
     </div>
     <div :class="{ 'hidden': !showMenu }" class="flex flex-col items-center lg:flex lg:flex-row">
-      <NuxtLink class="p-4" to="/about">About</NuxtLink>
       <a class="p-4" href="https://twitter.com/voraciousdev" rel="noopener" target="_blank">Twitter</a>
       <a class="p-4" href="https://github.com/voraciousdev" rel="noopener" target="_blank">GitHub</a>
       <a class="p-4" href="https://octo.app" rel="noopener" target="_blank">Octo</a>
       <NuxtLink class="p-4" to="/sheets">Cheat Sheets</NuxtLink>
     </div>
   </nav>
-  <main class="px-5 text-sm max-w-[75ch] m-auto lg:text-base">
+  <main class="px-5 pb-24 text-sm max-w-[75ch] mx-auto lg:text-base">
     <NuxtPage />
   </main>
 </template>

@@ -1,4 +1,4 @@
-## A Guide to Installing the Windows Subsystem for Linux (WSL) and Windows Terminal
+# A Guide to Installing the Windows Subsystem for Linux (WSL) and Windows Terminal
 
 As a developer that typically works on Mac or Linux, you will be disappointed with the out-of-the-box terminal in Windows. Lucky for us, Windows supports a fairly smooth Linux integration called the Windows Subsystem for Linux (or WSL for short). If you are unfamiliar with it, Microsoft has a pretty concise explanation:
 
