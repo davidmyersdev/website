@@ -1,6 +1,7 @@
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
+  target: 'static',
   meta: {
     title: 'David Myers | voracious.dev',
     link: [
