@@ -1,7 +1,4 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
-  "redirects": [
-    { "source": "/a-practical-guide-to-the-web-cryptography-api", "destination": "/blog/a-practical-guide-to-the-web-cryptography-api" }
-  ]
+  "trailingSlash": false
 }

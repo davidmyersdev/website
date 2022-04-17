@@ -1,6 +1,6 @@
-## A Practical Guide to the Web Cryptography API
+# A Practical Guide to the Web Cryptography API
 
-Client-side encryption is a feature I had wanted to implement in [octo](https://github.com/voraciousdev/octo) for a while now. When it finally came time to tackle it, I was surprised at the sparse real-world examples on the topic. The documentation on [MDN](https://developer.mozilla.org/en-US/) is robust, but it requires a lot of jumping around to individual method APIs. I hope this article is helpful for anyone out there looking for guidance.
+Client-side encryption is a feature I had wanted to implement in [Octo](https://octo.app) for a while now. When it finally came time to tackle it, I was surprised at the sparse real-world examples on the topic. The documentation on [MDN](https://developer.mozilla.org/en-US/) is robust, but it requires a lot of jumping around to individual method APIs. I hope this article is helpful for anyone out there looking for guidance.
 
 *Note: The Web Cryptography API is asynchronous, so I use the async/await syntax in this article for concision.*
 
@@ -34,7 +34,7 @@ Before we can encrypt data, we first have to encode it into a byte stream. We ca
 // https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder
 const encode = (data) => {
   const encoder = new TextEncoder()
-  
+
   return encoder.encode(data)
 }
 ```
@@ -66,7 +66,7 @@ const encrypt = async (data, key) => {
     name: 'AES-GCM',
     iv: iv,
   }, key, encoded)
-  
+
   return {
     cipher,
     iv,
@@ -122,7 +122,7 @@ After decrypting, we will need to decode our resulting byte stream back into its
 // https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder
 const decode = (bytestream) => {
   const decoder = new TextDecoder()
-  
+
   return decoder.decode(bytestream)
 }
 ```
@@ -138,7 +138,7 @@ const decrypt = async (cipher, key, iv) => {
     name: 'AES-GCM',
     iv: iv,
   }, key, cipher)
-  
+
   return decode(encoded)
 }
 ```
@@ -153,7 +153,7 @@ const app = async () => {
   const first = 'Hello, World!'
   const key = await generateKey()
   const { cipher, iv } = await encrypt(first, key)
-  
+
   // pack and transmit
   await fetch('/secure-api', {
     method: 'POST',
@@ -162,7 +162,7 @@ const app = async () => {
       iv: pack(iv),
     }),
   })
-  
+
   // retrieve
   const response = await fetch('/secure-api').then(res => res.json())
 
@@ -174,4 +174,4 @@ const app = async () => {
 
 That's all there is to it! We have successfully implemented client-side encryption.
 
-As a final note, I just want to share [octo](https://github.com/voraciousdev/octo), a writing app for developers, one more time. It's free, it's open source, and I would absolutely love it if you checked it out. Thanks, everyone, and happy coding. ✌️
+As a final note, I just want to share [Octo](https://octo.app), a writing app for developers, one more time. It's free, it's open source, and I would absolutely love it if you checked it out. Thanks, everyone, and happy coding. ✌️

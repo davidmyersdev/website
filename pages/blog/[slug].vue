@@ -6,7 +6,11 @@ const article = await query.findOne()
 </script>
 
 <template>
-  <div text-xl>
+  <article class="markdown">
     <Content :document="article" />
-  </div>
+  </article>
 </template>
+
+<style>
+@import '~/styles/article.css';
+</style>

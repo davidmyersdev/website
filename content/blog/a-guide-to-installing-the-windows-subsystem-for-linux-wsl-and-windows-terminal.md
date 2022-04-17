@@ -107,7 +107,7 @@ You just need to update the `defaultProfile` property with the UUID for Ubuntu a
 
 When you launch Windows Terminal, you _will_ be presented with the Ubuntu shell, but you will be dropped into the Windows file system. As mentioned above, WSL 2 works best when you use the Linux file system. To change your default directory to your Linux user's home directory, you just need to run the following command in the Ubuntu shell (your new default for Windows Terminal).
 
-```shell
+```bash
 echo 'cd ~' >> ~/.bashrc
 ```
 

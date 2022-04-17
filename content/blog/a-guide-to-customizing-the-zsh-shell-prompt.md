@@ -1,13 +1,13 @@
-## A Guide to Customizing the Zsh Shell Prompt
+# A Guide to Customizing the Zsh Shell Prompt
 
-The goal of this article is to teach you just enough about the shell prompt to make some helpful customizations. 
+The goal of this article is to teach you just enough about the shell prompt to make some helpful customizations.
 
 ## What is the shell prompt?
 
 The prompt is the bit of text that shows up in our shells to indicate that we can interact with them. The prompt usually gives us some details about the current shell session such as username, machine name, current directory, and some kind of prompt termination token. An example might look something like this.
 
 ```bash
-david@macbook /tmp $ 
+david@macbook /tmp $
 ```
 
 All of this information can be customized through the shell's prompt strings. Each shell has specific escape sequences that must be used. This just means that we have to use different tokens to represent things such as username, color formatting, etc. For the purposes of this article, we will be using [Zsh](https://www.zsh.org/), and we can confirm that is our current shell by running this.
@@ -21,7 +21,7 @@ echo $0 # /bin/zsh
 The primary prompt string is stored in a variable called `PS1`. There are five prompt strings in total, so the trailing number denotes its responsibility. The primary prompt string is the one that is printed to `stdout` when the shell is waiting for a new command, and it is therefore the one we probably see most frequently. Unlike a typical variable, these prompt strings undergo expansion _every time the prompt is displayed_. This is what allows us to update the displayed path after changing directories, for example. A `PS1` string might look something like this.
 
 ```bash
-PS1='%n@%m %/ $ ' # david@macbook /tmp $ 
+PS1='%n@%m %/ $ ' # david@macbook /tmp $
 ```
 
 We will dive into this more below.
@@ -38,14 +38,14 @@ We are going to build our prompt from scratch, so let's start with some basic in
 
 ```bash
 # ~/.zshrc
-PS1='$ ' # $ 
+PS1='$ ' # $
 ```
 
 This prompt does its primary job of telling us the shell is ready for input, but we can make it much more useful. Let's start by adding our username `%n`, our machine name `%m`, and our current directory `%/`.
 
 ```bash
 # ~/.zshrc
-PS1='%n@%m %/ $ ' # david@macbook /tmp $ 
+PS1='%n@%m %/ $ ' # david@macbook /tmp $
 ```
 
 That's looking a lot more like what we might expect from a typical shell prompt.
@@ -56,7 +56,7 @@ Now that we have a basic prompt, we can spice it up with some color. To change t
 
 ```bash
 # ~/.zshrc
-PS1='%n@%m %F{red}%/%f $ ' # david@macbook /tmp $ 
+PS1='%n@%m %F{red}%/%f $ ' # david@macbook /tmp $
 ```
 
 ### Adding the current Git branch
@@ -84,7 +84,7 @@ autoload -Uz vcs_info # enable vcs_info
 precmd () { vcs_info } # always load before displaying the prompt
 zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f)' # git(main)
 
-PS1='%n@%m %F{red}%/%f$vcs_info_msg_0_ $ ' # david@macbook /tmp/repo (main) $ 
+PS1='%n@%m %F{red}%/%f$vcs_info_msg_0_ $ ' # david@macbook /tmp/repo (main) $
 ```
 
 ### Final result
@@ -95,4 +95,4 @@ To summarize, we have learned how to include specific information about our syst
 
 ## Closing
 
-I hope this article helped shed some light on the shell prompt syntax. It was a lot of fun to write while experimenting with my own prompt (which you can see at the top of this page). As a final note, I would love to share [octo](https://github.com/writewithocto/octo) - a hackable, offline-first markdown editor for notes, code snippets, and writing that runs entirely in-browser. It's free and open source, and working on it gives me a lot of ideas and inspiration for the articles I write. Thank you, and happy coding. ✌️
+I hope this article helped to shed some light on the shell prompt syntax. It was a lot of fun to write while experimenting with my own prompt (which you can see at the top of this page). As a final note, I would love to share [Octo](https://octo.app) - a modern markdown editor for notes, code snippets, and writing that runs entirely in-browser. It's free and open source, and working on it gives me a lot of ideas and inspiration for the articles I write. Thank you, and happy coding. ✌️
