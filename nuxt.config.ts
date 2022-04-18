@@ -1,12 +1,17 @@
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
-  target: 'static',
+  buildModules: [
+    '@vueuse/nuxt',
+    '@pinia/nuxt',
+    '@voraciousdev/nuxt3-content',
+    '@nuxtjs/tailwindcss',
+  ],
   meta: {
     title: 'David Myers | voracious.dev',
     link: [
       {
-        rel: 'icon', type: 'image/png', href: '/nuxt.png',
+        rel: 'icon', type: 'image/png', href: '/icon.png',
       },
       {
         rel: 'preconnect',
@@ -23,12 +28,14 @@ export default defineNuxtConfig({
       },
     ],
   },
-  buildModules: [
-    '@vueuse/nuxt',
-    '@pinia/nuxt',
-    '@voraciousdev/nuxt3-content',
-    '@nuxtjs/tailwindcss',
-  ],
+  ssr: false,
+  target: 'static',
+  router: {
+    trailingSlash: false,
+    options: {
+      strict: true,
+    },
+  },
   vueuse: {
     ssrHandlers: true,
   },
