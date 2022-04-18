@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const route = useRoute()
 const slug = route.params.slug
-const query = queryContent('blog', slug as string)
+const query = queryContent(...[slug].flat())
 const article = await query.findOne()
 </script>
 
