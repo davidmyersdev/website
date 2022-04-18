@@ -28,14 +28,14 @@ export default defineNuxtConfig({
       },
     ],
   },
-  ssr: false,
-  target: 'static',
   router: {
     trailingSlash: false,
     options: {
       strict: true,
     },
   },
+  ssr: true,
+  target: 'static',
   vueuse: {
     ssrHandlers: true,
   },
