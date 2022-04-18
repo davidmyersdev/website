@@ -3,7 +3,7 @@
   NODE_VERSION = "16"
 
 [build]
-  publish = "dist"
+  publish = ".output"
   command = "yarn install && yarn generate"
 
 [[redirects]]
