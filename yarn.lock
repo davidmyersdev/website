@@ -9,12 +9,12 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@antfu/eslint-config-basic@0.20.3":
-  version "0.20.3"
-  resolved "https://registry.yarnpkg.com/@antfu/eslint-config-basic/-/eslint-config-basic-0.20.3.tgz#f9a6a846ad095e00cbe1d6b9b69f918249cea899"
-  integrity sha512-fO2SBoIlT1PJabayQYTKds0VQsTFsFG//FOjXY/OylOxLAnXebkPZK8DGYBDjlcL63k9ZK1rf8KduE4M3cB5/A==
+"@antfu/eslint-config-basic@0.20.6":
+  version "0.20.6"
+  resolved "https://registry.yarnpkg.com/@antfu/eslint-config-basic/-/eslint-config-basic-0.20.6.tgz#73429686fb51093dac9aee273ba671a15fedaa8d"
+  integrity sha512-2xeB/7y2mix0UL4rvv2dqMSKJtLpX9a1hfldqpOlTJ8L6ur/4y8C6B7PdmfYeOF7/VzbJs7iOemZ8fwUYa7ufA==
   dependencies:
-    eslint-plugin-antfu "0.20.3"
+    eslint-plugin-antfu "0.20.6"
     eslint-plugin-eslint-comments "^3.2.0"
     eslint-plugin-html "^6.2.0"
     eslint-plugin-import "^2.25.4"
@@ -27,38 +27,38 @@
     jsonc-eslint-parser "^2.1.0"
     yaml-eslint-parser "^0.5.0"
 
-"@antfu/eslint-config-react@0.20.3":
-  version "0.20.3"
-  resolved "https://registry.yarnpkg.com/@antfu/eslint-config-react/-/eslint-config-react-0.20.3.tgz#203b50acb942f0eb3c976776067ef966fed389b1"
-  integrity sha512-BHytPbmETkHekSicPqOasIvdgTQi28SA2yMxWfm4+XClQT/w5ITlvn+tofJD4F3F1VMTdWw7kdtfgbm+20kOZg==
+"@antfu/eslint-config-react@0.20.6":
+  version "0.20.6"
+  resolved "https://registry.yarnpkg.com/@antfu/eslint-config-react/-/eslint-config-react-0.20.6.tgz#b2b47a5c845e9bb8a2e5041b9f78a3827b9727fa"
+  integrity sha512-E7ezhEdSRZGkhgYcCoCYqwXVIdjF9lHukUlUfDVQ0vkNWwXJ5n899dPIDLbmRjIhAJNfTPTzSDZBKW8+wo+v0g==
   dependencies:
-    "@antfu/eslint-config-ts" "0.20.3"
+    "@antfu/eslint-config-ts" "0.20.6"
     eslint-plugin-react "^7.29.4"
 
-"@antfu/eslint-config-ts@0.20.3":
-  version "0.20.3"
-  resolved "https://registry.yarnpkg.com/@antfu/eslint-config-ts/-/eslint-config-ts-0.20.3.tgz#77dbfcbf136c31466ae0d18982ec28b6dd66f90d"
-  integrity sha512-kVegzXfBpyAdSycOQZhd+zQMll7MaBAAeG/mT7FP1QnPWzkoJJq7IC30LIpctdDdDsTHmeRZSxO7rL3SlvsEaA==
+"@antfu/eslint-config-ts@0.20.6":
+  version "0.20.6"
+  resolved "https://registry.yarnpkg.com/@antfu/eslint-config-ts/-/eslint-config-ts-0.20.6.tgz#22d2c2550c3d6773a49f3d3c1468832d565d9266"
+  integrity sha512-Lra8CVoHiZc8hMZ/hQ077Fg40hoNQtF03XkInRwemYCHChpEVoiG7ytLAuUzwMD/sSOcBqlyTb8eRuJwdzlOfg==
   dependencies:
-    "@antfu/eslint-config-basic" "0.20.3"
+    "@antfu/eslint-config-basic" "0.20.6"
     "@typescript-eslint/eslint-plugin" "^5.17.0"
     "@typescript-eslint/parser" "^5.17.0"
 
-"@antfu/eslint-config-vue@0.20.3":
-  version "0.20.3"
-  resolved "https://registry.yarnpkg.com/@antfu/eslint-config-vue/-/eslint-config-vue-0.20.3.tgz#e25fda76eaf438ffa0c16102df45a8e25439fc6d"
-  integrity sha512-FBRJ5qzxMKp8DhURMyuSCoueZWU4Rtd0IgSde1KvPbHMW6Q1kYIK4YNrAvuIzJ06yUYd1vJ962u+XUkIDMJwUQ==
+"@antfu/eslint-config-vue@0.20.6":
+  version "0.20.6"
+  resolved "https://registry.yarnpkg.com/@antfu/eslint-config-vue/-/eslint-config-vue-0.20.6.tgz#69e891ae33e7eb63bfc083fe9b5604eb0ea9f107"
+  integrity sha512-XiShqv24Wpd9zrL9PyYjb9OYNAiZeD1ReYv1SrQ/yXB0Dt3r9Go2UCTZVTF+4vpoETdzMj0aF0jqhx6ZKijjew==
   dependencies:
-    "@antfu/eslint-config-ts" "0.20.3"
+    "@antfu/eslint-config-ts" "0.20.6"
     eslint-plugin-vue "^8.5.0"
 
 "@antfu/eslint-config@^0.20.2":
-  version "0.20.3"
-  resolved "https://registry.yarnpkg.com/@antfu/eslint-config/-/eslint-config-0.20.3.tgz#7ebfd3f92cd0d02148be2388caf69386eb2c4913"
-  integrity sha512-noXVlHnyJ4K4KhjXzyTLCQSoRPlEsiuoJFbBzUT7LUQ6VZSEa+0vvnksMCe0whCe9D3zKIyKIy9um2hQJKJbCg==
+  version "0.20.6"
+  resolved "https://registry.yarnpkg.com/@antfu/eslint-config/-/eslint-config-0.20.6.tgz#f30a09148c3a922db72c52b82b4401ac94f314d9"
+  integrity sha512-je2qjyEXqxyioRm80Tn4D2TWutrwlrtW6cKTJ9nw2WVg0oLJV8XQ2Ua8e9lp2rsFcmmb17FQyaaDyL4xCxs/HA==
   dependencies:
-    "@antfu/eslint-config-react" "0.20.3"
-    "@antfu/eslint-config-vue" "0.20.3"
+    "@antfu/eslint-config-react" "0.20.6"
+    "@antfu/eslint-config-vue" "0.20.6"
     "@typescript-eslint/eslint-plugin" "^5.17.0"
     "@typescript-eslint/parser" "^5.17.0"
     eslint-plugin-eslint-comments "^3.2.0"
@@ -465,12 +465,12 @@
   resolved "https://registry.yarnpkg.com/@nuxt/devalue/-/devalue-2.0.0.tgz#c7bd7e9a516514e612d5d2e511ffc399e0eac322"
   integrity sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==
 
-"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27500677.83d27bd", "@nuxt/kit@npm:@nuxt/kit-edge@latest":
-  version "3.0.0-27500677.83d27bd"
-  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27500677.83d27bd.tgz#89046805933a47a2a148be930e932e01a3e63e97"
-  integrity sha512-Hk0yK/86x05deZJKcKYmvaxy+LIhE4W4inqtuIXvLzOTCO7o87sg+CWddtQU8sm7qkgG61Q+y4wkpgkF0EdaXA==
+"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27501460.04a72f8", "@nuxt/kit@npm:@nuxt/kit-edge@latest":
+  version "3.0.0-27501460.04a72f8"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27501460.04a72f8.tgz#091a590c52a064d737da58b5e9e9c23d0271e1df"
+  integrity sha512-B7jujSfjPVnnkqGtkiZfCeGJsnDBn5yIjkz+Rw1fuT0ZzUVI4u+yYlYuRXp9chv+QodPt4dOQgljMlc0YuzHEw==
   dependencies:
-    "@nuxt/schema" "npm:@nuxt/schema-edge@3.0.0-27500677.83d27bd"
+    "@nuxt/schema" "npm:@nuxt/schema-edge@3.0.0-27501460.04a72f8"
     c12 "^0.2.5"
     consola "^2.15.3"
     defu "^6.0.0"
@@ -503,10 +503,10 @@
     postcss-url "^10.1.1"
     semver "^7.3.4"
 
-"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27500677.83d27bd":
-  version "3.0.0-27500677.83d27bd"
-  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.0.0-27500677.83d27bd.tgz#d0701f9677d9a2530e1cb80224ea10905a15f6e1"
-  integrity sha512-B5WdbIg6PZqGu2eWQSHteoB1DRiiW+hUTM85tmyN34QXDGQjYa7ETwDISCuha7WtkX+/RrrvTr7DKwHNX/XxpQ==
+"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27501460.04a72f8":
+  version "3.0.0-27501460.04a72f8"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.0.0-27501460.04a72f8.tgz#515bb0d4ed9d2ee92d182710f0295216aaf1f283"
+  integrity sha512-9jK5mLo2KRh4K8NSz6/bptSav63kAI57B9mZsB1qug4O4dSHTJDeP5T6eHzM9K5gKUsUDlmvniW+RSvbY2dsDg==
   dependencies:
     c12 "^0.2.5"
     create-require "^1.1.1"
@@ -515,7 +515,7 @@
     pathe "^0.2.0"
     postcss-import-resolver "^2.0.0"
     scule "^0.2.1"
-    std-env "^3.0.1"
+    std-env "^3.1.1"
     ufo "^0.8.3"
     unimport "^0.1.5"
 
@@ -524,12 +524,12 @@
   resolved "https://registry.yarnpkg.com/@nuxt/ui-templates-edge/-/ui-templates-edge-0.0.0-27479051.598a8a0.tgz#8adcb99a881130c8f6ad4d53ef7b487f7aa1ca99"
   integrity sha512-oGL9LYhWqZTYEkxIc+vB9joI+dfiYjx4vlMH6RyCDg1wAuJBLn+xgC0efS1rUFtnag9qE9fx+HQ1SbKR6Hpt1Q==
 
-"@nuxt/vite-builder@npm:@nuxt/vite-builder-edge@3.0.0-27500677.83d27bd":
-  version "3.0.0-27500677.83d27bd"
-  resolved "https://registry.yarnpkg.com/@nuxt/vite-builder-edge/-/vite-builder-edge-3.0.0-27500677.83d27bd.tgz#72bb14a3ee182f98e4985e119347b63fa70240ba"
-  integrity sha512-siHkIaQOQ8RDpYr1aPFnCNlGYoLfHmKcM4BvM4tjkEXgmlVPxpRsimU7QaV3ucNHPxELZmPnxr5MTnVZc3q0Yw==
+"@nuxt/vite-builder@npm:@nuxt/vite-builder-edge@3.0.0-27501460.04a72f8":
+  version "3.0.0-27501460.04a72f8"
+  resolved "https://registry.yarnpkg.com/@nuxt/vite-builder-edge/-/vite-builder-edge-3.0.0-27501460.04a72f8.tgz#813f5b99ec417244d1fbedf88cc8ae421d4abe1c"
+  integrity sha512-ULs0lXYxKeEtSoH6MsTgMFGmFE3/iFmqpom6pAPPFTsltmYdDO3OPtngq0ofTB8qhgggaqJH6CRLjkCZS0P/ZQ==
   dependencies:
-    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27500677.83d27bd"
+    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27501460.04a72f8"
     "@vitejs/plugin-vue" "^2.3.1"
     "@vitejs/plugin-vue-jsx" "^1.3.10"
     autoprefixer "^10.4.4"
@@ -2602,10 +2602,10 @@ eslint-module-utils@^2.7.3:
     debug "^3.2.7"
     find-up "^2.1.0"
 
-eslint-plugin-antfu@0.20.3:
-  version "0.20.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-antfu/-/eslint-plugin-antfu-0.20.3.tgz#4e7ae8e0021a7f4699c2f1106b3a2c2f54377fe8"
-  integrity sha512-pe9Myxlw6zDPU9Q1Cdj/LJzyJ48qMOyMpmmWwApV0Ei4DVh+jqW/B3r3Jf3zeiaco3yqmL2B0A7fZynQQWsVXg==
+eslint-plugin-antfu@0.20.6:
+  version "0.20.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-antfu/-/eslint-plugin-antfu-0.20.6.tgz#caa7dc81f0aff663947359d4b915153284ad1f1b"
+  integrity sha512-1aENz76mpQq3UvzWB9OrXTY+rABxUDa6iySasypqiP2nbgCBodXW5dg0cNLJA255ZAamEGF76HomWPMfoZPy0Q==
   dependencies:
     "@typescript-eslint/utils" "^5.17.0"
 
@@ -3096,9 +3096,9 @@ fs-constants@^1.0.0:
   integrity sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==
 
 fs-extra@^10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.0.1.tgz#27de43b4320e833f6867cc044bfce29fdf0ef3b8"
-  integrity sha512-NbdoVMZso2Lsrn/QwLXOy6rm0ufY2zEOKCDzJR/0kBsb0E6qed0P3iYK+Ath3BfvXEeu4JhEtXLgILx5psUfag==
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
+  integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
   dependencies:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
@@ -4262,9 +4262,9 @@ lines-and-columns@^1.1.6:
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
 listhen@^0.2.4, listhen@^0.2.8:
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/listhen/-/listhen-0.2.9.tgz#21ce8396307dbc181063bc49b24462d11ccdf406"
-  integrity sha512-eQHoNxeYimBk/H7QowPyrFGyI727j7IeF3XAQLWeWOLTvgA7ggE0ZvxC8L/16e1pGQafxHrQXqa8bWFMiQP+wQ==
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/listhen/-/listhen-0.2.10.tgz#0656be446b7729547143210a870d3f443196bc9c"
+  integrity sha512-A2JclV3okrZ/do9ICqdoFGWJHIHrFl71CdwyCWIFJyQAc+QjIKaMks2FKTbXRsa9i0OOSUMHZK2vWHmMfVp00A==
   dependencies:
     clipboardy "^3.0.0"
     colorette "^2.0.16"
@@ -5402,22 +5402,22 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-"nuxi@npm:nuxi-edge@3.0.0-27500677.83d27bd":
-  version "3.0.0-27500677.83d27bd"
-  resolved "https://registry.yarnpkg.com/nuxi-edge/-/nuxi-edge-3.0.0-27500677.83d27bd.tgz#6725a0b9abd8e857fe8d07b290f78f986ab4bcc6"
-  integrity sha512-4PmSKHeTGVQTYXzeE6Q8Aa7t8UI1jjV0pW+U29LNaev5S2qx11DCC7nqR7kcc/G+Nlth6xx1ryWmkAN5qxTytw==
+"nuxi@npm:nuxi-edge@3.0.0-27501460.04a72f8":
+  version "3.0.0-27501460.04a72f8"
+  resolved "https://registry.yarnpkg.com/nuxi-edge/-/nuxi-edge-3.0.0-27501460.04a72f8.tgz#23e8a15bf6c44a50f8353c45b3f23bf20c7cea39"
+  integrity sha512-osPlNxaCnXgxtoCyRHrTn2Y+hxf+mFTVG3q/6n5PRD4Nc8L4vHMTfF6FpgMkKVmghuFKuTuxVmFIzsWh82N/UA==
   optionalDependencies:
     fsevents "~2.3.2"
 
 nuxt3@^3.0.0-27489614.315e5b5:
-  version "3.0.0-27500677.83d27bd"
-  resolved "https://registry.yarnpkg.com/nuxt3/-/nuxt3-3.0.0-27500677.83d27bd.tgz#3d6276ad298da8a75f42cf00de643ad87925f2e5"
-  integrity sha512-sid2XaZLrttI99FGnEX5VoMrgzVP/L/9ewDN68lRw/KIfpNZJndyMKxeIkhiKGFIKURa82paWOBiUu/23YQDbg==
+  version "3.0.0-27501460.04a72f8"
+  resolved "https://registry.yarnpkg.com/nuxt3/-/nuxt3-3.0.0-27501460.04a72f8.tgz#697c8a1d3fbc8dbbbf414c894e00952f439f079a"
+  integrity sha512-kmvWNSaY9IODEURK6yXAHMG1/cn38flkp6uT906ZEPt7KK+N43klhZm7j/E+V/rnnhbCxEJxgczZBWPC6/fZIw==
   dependencies:
-    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27500677.83d27bd"
-    "@nuxt/schema" "npm:@nuxt/schema-edge@3.0.0-27500677.83d27bd"
+    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27501460.04a72f8"
+    "@nuxt/schema" "npm:@nuxt/schema-edge@3.0.0-27501460.04a72f8"
     "@nuxt/ui-templates" "npm:@nuxt/ui-templates-edge@latest"
-    "@nuxt/vite-builder" "npm:@nuxt/vite-builder-edge@3.0.0-27500677.83d27bd"
+    "@nuxt/vite-builder" "npm:@nuxt/vite-builder-edge@3.0.0-27501460.04a72f8"
     "@vue/reactivity" "^3.2.33"
     "@vue/shared" "^3.2.33"
     "@vueuse/head" "^0.7.6"
@@ -5435,7 +5435,7 @@ nuxt3@^3.0.0-27489614.315e5b5:
     magic-string "^0.26.1"
     mlly "^0.5.2"
     nitropack "^0.2.11"
-    nuxi "npm:nuxi-edge@3.0.0-27500677.83d27bd"
+    nuxi "npm:nuxi-edge@3.0.0-27501460.04a72f8"
     ohash "^0.1.0"
     ohmyfetch "^0.4.15"
     pathe "^0.2.0"
@@ -6894,7 +6894,7 @@ statuses@2.0.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
 
-std-env@^3.0.1:
+std-env@^3.0.1, std-env@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.1.1.tgz#1f19c4d3f6278c52efd08a94574a2a8d32b7d092"
   integrity sha512-/c645XdExBypL01TpFKiG/3RAa/Qmu+zRi0MwAmrdEkwHNuN0ebo8ccAXBBDa5Z0QOJgBskUIbuCK91x0sCVEw==
