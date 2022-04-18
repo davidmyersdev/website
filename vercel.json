@@ -1,4 +1,14 @@
 {
+  "version": 2,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "builds": [
+    {
+      "src": "nuxt.config.ts",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "generateStaticRoutes": true
+      }
+    }
+  ]
 }
