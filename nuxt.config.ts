@@ -1,10 +1,11 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   buildModules: [
     '@vueuse/nuxt',
     '@pinia/nuxt',
     '@voraciousdev/nuxt3-content',
+    // '@nuxt/content-edge',
     '@nuxtjs/tailwindcss',
   ],
   meta: {
