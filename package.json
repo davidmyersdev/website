@@ -3,8 +3,10 @@
   "type": "module",
   "scripts": {
     "build": "nuxi build",
+    "build:vercel": "NITRO_PRESET=vercel nuxi build",
     "dev": "nuxi dev",
     "generate": "nuxi generate",
+    "generate:vercel": "NITRO_PRESET=vercel yarn generate",
     "preview": "nuxi preview",
     "lint": "eslint ."
   },
@@ -22,7 +24,7 @@
     "@rollup/pluginutils": "^4.2.1",
     "@tailwindcss/typography": "^0.5.2",
     "@voraciousdev/nuxt3-content": "^2.0.0-27509284.c41d0ab",
-    "@vueuse/nuxt": "^8.3.0",
+    "@vueuse/nuxt": "^8.3.1",
     "eslint": "^8.12.0",
     "parse-entities": "^4.0.0",
     "rehype-add-classes": "^1.0.0",
