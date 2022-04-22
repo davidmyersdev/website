@@ -42,6 +42,13 @@ export default defineNuxtConfig({
         href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap',
       },
     ],
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: "I'm a full-stack web developer with a voracious appetite for knowledge, practice, and improvement.",
+      }
+    ],
   },
   router: {
     trailingSlash: false,
