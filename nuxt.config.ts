@@ -8,6 +8,20 @@ export default defineNuxtConfig({
     // '@nuxt/content-edge',
     '@nuxtjs/tailwindcss',
   ],
+  content: {
+    highlight: {
+      preload: [
+        'bash',
+        'css',
+        'html',
+        'js',
+        'json',
+        'powershell',
+        'ts',
+      ],
+      theme: 'material-palenight',
+    },
+  },
   meta: {
     title: 'David Myers | voracious.dev',
     link: [
