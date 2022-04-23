@@ -1,5 +1,6 @@
 <template>
   <div class="flex flex-col gap-12 lg:gap-24">
+    <Author />
     <div class="flex flex-col gap-4">
       <h2 class="text-2xl lg:text-5xl font-semibold"><NuxtLink to="/blog/a-practical-cheat-sheet-for-css-flexbox">A Practical Cheat Sheet for CSS Flexbox (Containers)</NuxtLink></h2>
       <p class="text-gray-400 leading-6">I originally posted this Flexbox cheat sheet on Twitter, but the response was so positive that I decided to write it up here too! We will cover the (in my opinion) most common scenarios for Flexbox. If you just want the cheat sheet (pictured above), ...</p>

@@ -44,10 +44,17 @@ export default defineNuxtConfig({
     ],
     meta: [
       {
+        content: "I'm a full-stack web developer with a voracious appetite for knowledge, practice, and improvement.",
         hid: 'description',
         name: 'description',
-        content: "I'm a full-stack web developer with a voracious appetite for knowledge, practice, and improvement.",
-      }
+      },
+    ],
+    script: [
+      {
+        defer: true,
+        src: "https://neon-instant.voracious.dev/script.js",
+        'data-site': "XUGBCQTL",
+      },
     ],
   },
   router: {
