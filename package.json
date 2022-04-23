@@ -23,7 +23,7 @@
     "@pinia/nuxt": "^0.1.8",
     "@rollup/pluginutils": "^4.2.1",
     "@tailwindcss/typography": "^0.5.2",
-    "@voraciousdev/nuxt3-content": "^2.0.0-27510304.1a7f23d",
+    "@voraciousdev/nuxt3-content": "2.0.0-27509284.c41d0ab",
     "@vueuse/nuxt": "^8.3.1",
     "eslint": "^8.14.0",
     "parse-entities": "^4.0.0",

@@ -1050,10 +1050,10 @@
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-2.3.1.tgz#5f286b8d3515381c6d5c8fa8eee5e6335f727e14"
   integrity sha512-YNzBt8+jt6bSwpt7LP890U1UcTOIZZxfpE5WOJ638PNxSEKOqAi0+FSKS0nVeukfdZ0Ai/H7AFd6k3hayfGZqQ==
 
-"@voraciousdev/nuxt3-content@^2.0.0-27510304.1a7f23d":
-  version "2.0.0-27510304.1a7f23d"
-  resolved "https://registry.yarnpkg.com/@voraciousdev/nuxt3-content/-/nuxt3-content-2.0.0-27510304.1a7f23d.tgz#11e5d289ec879c7beb5351a81793079fdd7cfe0f"
-  integrity sha512-2gsl7/hCoRTkxegl55OqOkzQ1lGchp/FxVIVMCmpcSjckmJiiD9FV469wlmczNAUq+k2kkG6Qs6UX2mwLCkT3A==
+"@voraciousdev/nuxt3-content@2.0.0-27509284.c41d0ab":
+  version "2.0.0-27509284.c41d0ab"
+  resolved "https://registry.yarnpkg.com/@voraciousdev/nuxt3-content/-/nuxt3-content-2.0.0-27509284.c41d0ab.tgz#81adcbfa9474b6d938fee7e43feff95a5b63ed7a"
+  integrity sha512-R/F1nnGifz088VJv5VtKxt9Q0hJl3KdvSZZ09n3TTum0TL2SUf08msZ1uiUZukgPYcFYRB/zG7pCoKFZfXnRVQ==
   dependencies:
     "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
     base64-js "^1.5.1"
