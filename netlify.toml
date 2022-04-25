@@ -6,6 +6,11 @@
   publish = "dist"
   command = "yarn install && yarn generate"
 
+[[headers]]
+  for = "/api/_content/query/*"
+  [headers.values]
+    Content-Type = "application/json"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

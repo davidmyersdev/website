@@ -3,9 +3,11 @@
   "type": "module",
   "scripts": {
     "build": "nuxi build",
+    "build:netlify": "NITRO_PRESET=netlify nuxi build",
     "build:vercel": "NITRO_PRESET=vercel nuxi build",
     "dev": "nuxi dev",
     "generate": "nuxi generate",
+    "generate:netlify": "NITRO_PRESET=netlify yarn generate",
     "generate:vercel": "NITRO_PRESET=vercel yarn generate",
     "preview": "nuxi preview",
     "lint": "eslint ."
