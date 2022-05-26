@@ -1,6 +1,5 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
   "headers": [
     {
       "source": "/api/_content/query/(.+)",
@@ -11,5 +10,14 @@
         }
       ]
     }
-  ]
+  ],
+  "redirects": [
+    { "source": "/a-guide-to-customizing-the-zsh-shell-prompt", "destination": "/blog/a-guide-to-customizing-the-zsh-shell-prompt" },
+    { "source": "/a-guide-to-installing-the-windows-subsystem-for-linux-wsl-and-windows-terminal", "destination": "/blog/a-guide-to-installing-the-windows-subsystem-for-linux-wsl-and-windows-terminal" },
+    { "source": "/a-guide-to-web-development-on-the-windows-subsystem-for-linux-wsl", "destination": "/blog/a-guide-to-web-development-on-the-windows-subsystem-for-linux-wsl" },
+    { "source": "/a-practical-cheat-sheet-for-css-flexbox", "destination": "/blog/a-practical-cheat-sheet-for-css-flexbox" },
+    { "source": "/a-practical-guide-to-the-web-cryptography-api", "destination": "/blog/a-practical-guide-to-the-web-cryptography-api" },
+    { "source": "/an-introduction-to-vue-markdown-editor", "destination": "/blog/an-introduction-to-vue-markdown-editor" }
+  ],
+  "trailingSlash": false
 }
