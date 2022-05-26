@@ -1,7 +1,10 @@
-import colors from 'tailwindcss/colors'
+const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: [],
+  content: [
+    './components/**/*.{ts,tsx,vue}',
+    './pages/**/*.{ts,tsx,vue}',
+  ],
   theme: {
     extend: {
       colors: {

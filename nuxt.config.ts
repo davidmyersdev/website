@@ -4,8 +4,7 @@ export default defineNuxtConfig({
   buildModules: [
     '@vueuse/nuxt',
     '@pinia/nuxt',
-    '@voraciousdev/nuxt3-content',
-    // '@nuxt/content-edge',
+    '@nuxt/content',
     '@nuxtjs/tailwindcss',
   ],
   content: {

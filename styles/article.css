@@ -69,6 +69,10 @@
   padding: 0.25rem 0.5rem;
 }
 
+.markdown img {
+  border-radius: 0.25rem;
+}
+
 .markdown .line {
   display: inline-table;
   height: 1.5em;
