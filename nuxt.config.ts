@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     },
   },
   meta: {
-    title: 'David Myers | voracious.dev',
+    title: 'The Voracious Developer',
     link: [
       {
         rel: 'icon', type: 'image/png', href: '/icon.png',
@@ -63,6 +63,9 @@ export default defineNuxtConfig({
     },
   },
   ssr: true,
+  tailwindcss: {
+    configPath: '~/tailwind.config.cjs',
+  },
   target: 'static',
   vueuse: {
     ssrHandlers: true,
