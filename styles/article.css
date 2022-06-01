@@ -14,8 +14,9 @@
 .markdown h5,
 .markdown h6 {
   font-weight: 400;
-  margin-bottom: 2rem;
   line-height: 1.25em;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 
 .markdown h1 {
@@ -47,6 +48,11 @@
 
 .markdown p {
   margin-bottom: 2rem;
+}
+
+.markdown ul {
+  margin-bottom: 2rem;
+  list-style: inside;
 }
 
 .markdown pre {
@@ -81,6 +87,10 @@
 
 .markdown a:not(.markdown h3 a):not(.markdown h4 a):not(.markdown h5 a):not(.markdown h6 a) {
   text-decoration: underline;
+}
+
+.markdown .embed {
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 1024px) {
