@@ -2,7 +2,6 @@ import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   buildModules: [
-    '@vueuse/nuxt',
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
   ],
@@ -66,7 +65,4 @@ export default defineNuxtConfig({
     configPath: '~/tailwind.config.cjs',
   },
   target: 'static',
-  vueuse: {
-    ssrHandlers: true,
-  },
 })
