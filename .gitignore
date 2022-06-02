@@ -1,8 +1,9 @@
-node_modules
 *.log
-dist
-.output
-.nuxt
+.DS_Store
 .env
+.nuxt
+.output
 .vercel
 .vercel_build_output
+dist
+node_modules

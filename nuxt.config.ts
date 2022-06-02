@@ -3,7 +3,6 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   buildModules: [
     '@vueuse/nuxt',
-    '@pinia/nuxt',
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
   ],

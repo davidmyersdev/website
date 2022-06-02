@@ -1,3 +1,3 @@
 # voracious.dev
 
-My personal website
+My website
