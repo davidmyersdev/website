@@ -677,9 +677,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/content@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@nuxt/content@npm:2.0.0"
+"@nuxt/content@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@nuxt/content@npm:2.0.1"
   dependencies:
     "@nuxt/kit": ^3.0.0-rc.3
     csvtojson: ^2.0.10
@@ -725,8 +725,8 @@ __metadata:
     unist-util-position: ^4.0.3
     unist-util-visit: ^4.1.0
     unstorage: ^0.4.1
-    ws: ^8.6.0
-  checksum: 66619c7d9a4670add97db5254e2ee7f2e5074fe7d07df8f7d3f5a9437f16854bfdf92ffa43fb5c1c7d20766a9f1f8beb45c3aee836118c2149ac509987b03574
+    ws: ^8.7.0
+  checksum: 4c1c9b6e413db003ae79a30bd9379365d48dbd39e8dc05ad5589096b88e9bba2de8d876a99c010feeb58070bbfa270a263d27fb8a61cf0637de49894c80f8e27
   languageName: node
   linkType: hard
 
@@ -8900,7 +8900,7 @@ __metadata:
     "@antfu/eslint-config": ^0.24.2
     "@iconify-json/carbon": ^1.1.5
     "@iconify-json/twemoji": ^1.1.4
-    "@nuxt/content": ^2.0.0
+    "@nuxt/content": ^2.0.1
     "@nuxtjs/tailwindcss": ^5.1.2
     "@rollup/pluginutils": ^4.2.1
     "@tailwindcss/typography": ^0.5.2
@@ -10619,6 +10619,21 @@ __metadata:
     utf-8-validate:
       optional: true
   checksum: e2fca82059f1e087d0c78e2f37135e1b8332bc804fce46f83c2db1cb8571685abf9d2c99b964bab3752536ad90b99b46fb8d1428899aed3e560684ab4641bffd
+  languageName: node
+  linkType: hard
+
+"ws@npm:^8.7.0":
+  version: 8.7.0
+  resolution: "ws@npm:8.7.0"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ^5.0.2
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: 078fa2dbc06b31a45e0057b19e2930d26c222622e355955afe019c9b9b25f62eb2a8eff7cceabdad04910ecd2bd6ef4fa48e6f3673f2fdddff02a6e4c2459584
   languageName: node
   linkType: hard
 

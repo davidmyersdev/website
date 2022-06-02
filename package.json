@@ -19,7 +19,7 @@
     "@antfu/eslint-config": "^0.24.2",
     "@iconify-json/carbon": "^1.1.5",
     "@iconify-json/twemoji": "^1.1.4",
-    "@nuxt/content": "^2.0.0",
+    "@nuxt/content": "^2.0.1",
     "@nuxtjs/tailwindcss": "^5.1.2",
     "@rollup/pluginutils": "^4.2.1",
     "@tailwindcss/typography": "^0.5.2",
