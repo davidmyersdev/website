@@ -402,6 +402,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@giscus/vue@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@giscus/vue@npm:2.0.5"
+  dependencies:
+    giscus: ^1.0.5
+  peerDependencies:
+    vue: ">=3.2.0"
+  checksum: e3d73df5b0790e9932f73f7844044cbaa6572d9f5ee4d67eb1b3b32263b92d6ecbf00673dd22058004d47bd1d005b4ef33164a9b147bb15cf28c20175e3590bb
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.9.2":
   version: 0.9.5
   resolution: "@humanwhocodes/config-array@npm:0.9.5"
@@ -489,6 +500,13 @@ __metadata:
     methods: ^1.1.2
     path-to-regexp: ^6.1.0
   checksum: 80712e72e466f71ea118ab206ad54f4b341797728c04e556f00af939303d5da4459375440500bc360de77995794401459a23ec3a3f9c321386ef7c184643e39b
+  languageName: node
+  linkType: hard
+
+"@lit/reactive-element@npm:^1.3.0":
+  version: 1.3.2
+  resolution: "@lit/reactive-element@npm:1.3.2"
+  checksum: 0a89906ddebe2fe2772d942769fc6d69c53e445d476f449690daf371e196b73b99422b7722d262b97d8233e91528ee66b821d013032f0f9fd0f3fd178b4f6a45
   languageName: node
   linkType: hard
 
@@ -1050,6 +1068,13 @@ __metadata:
   version: 4.0.2
   resolution: "@types/tough-cookie@npm:4.0.2"
   checksum: e055556ffdaa39ad85ede0af192c93f93f986f4bd9e9426efdc2948e3e2632db3a4a584d4937dbf6d7620527419bc99e6182d3daf2b08685e710f2eda5291905
+  languageName: node
+  linkType: hard
+
+"@types/trusted-types@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@types/trusted-types@npm:2.0.2"
+  checksum: 3371eef5f1c50e1c3c07a127c1207b262ba65b83dd167a1c460fc1b135a3fb0c97b9f508efebd383f239cc5dd5b7169093686a692a501fde9c3f7208657d9b0d
   languageName: node
   linkType: hard
 
@@ -3640,6 +3665,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"giscus@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "giscus@npm:1.0.5"
+  dependencies:
+    lit: ^2.2.4
+  checksum: 609127f3b05863bbf7e330abe01557adf78cdba0b1567f93a6851168adfe1a9aee2e86adb0f2a5b1a5e2e9e981149baa7104245b8fd29c38a7bd46179ee8b657
+  languageName: node
+  linkType: hard
+
 "git-config-path@npm:^2.0.0":
   version: 2.0.0
   resolution: "git-config-path@npm:2.0.0"
@@ -4759,6 +4793,36 @@ __metadata:
     http-shutdown: ^1.2.2
     selfsigned: ^2.0.1
   checksum: c4b7e6f9574643d685577c519f31bf4f24cd3daccb7d9bbace23948a356b068fcd5758d4da154799aca18a032a27aeca5e98b3288369060eb2b939ddc510927d
+  languageName: node
+  linkType: hard
+
+"lit-element@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "lit-element@npm:3.2.0"
+  dependencies:
+    "@lit/reactive-element": ^1.3.0
+    lit-html: ^2.2.0
+  checksum: 64bd0f05f7a93921a5853e92f4b86b75affc088805f5ce0249c62a02a1d44445dea5c8319badc4cae6e5663afeb60296e3e0f63fd3af265b89fa482c8a846c3d
+  languageName: node
+  linkType: hard
+
+"lit-html@npm:^2.2.0":
+  version: 2.2.5
+  resolution: "lit-html@npm:2.2.5"
+  dependencies:
+    "@types/trusted-types": ^2.0.2
+  checksum: 688fed0a5cf16cd08d837ba89c894162e38798117bcdf8c588254920b4a5448c1a367c2f0ca5e88307a9b1293995de335cf60f0a43b4d6c521089ac3ae0154b1
+  languageName: node
+  linkType: hard
+
+"lit@npm:^2.2.4":
+  version: 2.2.5
+  resolution: "lit@npm:2.2.5"
+  dependencies:
+    "@lit/reactive-element": ^1.3.0
+    lit-element: ^3.2.0
+    lit-html: ^2.2.0
+  checksum: 0d3298ae9d333eef3cd30e9e76003a74db080831e64cc893964e119df0a99d26fe97114bae4bdea365ee93d0ee55f71379e1b004a475cd3ff3c8f28ad2bc152b
   languageName: node
   linkType: hard
 
@@ -7596,6 +7660,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@giscus/vue": ^2.0.5
     "@nuxt/content": ^2.0.1
     "@nuxtjs/tailwindcss": ^5.1.2
     eslint: ^8.16.0

@@ -24,7 +24,7 @@ const toggleMenu = () => {
       <NuxtLink class="p-4" to="/sheets">Cheat Sheets</NuxtLink>
     </div>
   </nav>
-  <main class="px-5 pb-24 text-sm max-w-[75ch] mx-auto lg:text-base">
+  <main class="px-5 pb-24 text-sm max-w-[75ch] w-full mx-auto lg:text-base">
     <NuxtPage />
   </main>
 </template>
