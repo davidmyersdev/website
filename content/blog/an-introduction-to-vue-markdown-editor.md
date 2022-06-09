@@ -1,10 +1,17 @@
-# An Introduction to vue-markdown-editor
+---
+title: An Introduction to vue-markdown-editor
+tags: [javascript, vue]
+createdAt: 2020-12-28T05:00:00.000Z
+updatedAt: 2020-12-28T05:00:00.000Z
+---
 
 [![](https://raw.githubusercontent.com/voraciousdev/vue-markdown-editor/master/images/screenshot.png)](https://github.com/voraciousdev/vue-markdown-editor)
 
 One of the biggest challenges I faced while building [Octo](https://octo.app) was the markdown editor. When it comes to implementing a markdown text input, there is usually one way to go about it: a **plain text** input field with an optional **preview** mode. This approach obviously works, but the experience can be a bit clunky when writing larger bodies of content.
 
 In this article, we will cover an alternative approach that - while being a bit heavier - offers a smoother user experience for the author. This will be accomplished with a standalone Vue component called [vue-markdown-editor](https://github.com/voraciousdev/vue-markdown-editor) (MIT-licensed) which was extracted from the core of [Octo](https://octo.app). This component acts as a plain text input, but it renders headers, syntax highlighting, and images in place. This is especially helpful for overall readability and catching syntax errors without interrupting focus by switching between edit and preview panels. Feel free to try it out at [octo.app](https://octo.app)!
+
+<!-- more -->
 
 ## Create a new Vue project
 

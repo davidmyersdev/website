@@ -1,6 +1,13 @@
-# A Guide to Customizing the Zsh Shell Prompt
+---
+title: A Guide to Customizing the Zsh Shell Prompt
+tags: [zsh]
+createdAt: 2021-03-11T05:00:00.000Z
+updatedAt: 2021-03-11T05:00:00.000Z
+---
 
 The goal of this article is to teach you just enough about the shell prompt to make some helpful customizations.
+
+<!-- more -->
 
 ## What is the shell prompt?
 

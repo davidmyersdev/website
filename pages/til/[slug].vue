@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const slug = useRoute().params.slug
-const path = `/blog/${slug}`
+const path = `/til/${slug}`
 </script>
 
 <template>

@@ -1,10 +1,17 @@
-# A Guide to Installing the Windows Subsystem for Linux (WSL) and Windows Terminal
+---
+title: A Guide to Installing the Windows Subsystem for Linux (WSL) and Windows Terminal
+tags: [bash, linux, windows]
+createdAt: 2021-01-02T05:00:00.000Z
+updatedAt: 2021-01-02T05:00:00.000Z
+---
 
 As a developer that typically works on Mac or Linux, you will be disappointed with the out-of-the-box terminal in Windows. Lucky for us, Windows supports a fairly smooth Linux integration called the Windows Subsystem for Linux (or WSL for short). If you are unfamiliar with it, Microsoft has a pretty concise explanation:
 
 > The Windows Subsystem for Linux lets developers run a GNU/Linux environment -- including most command-line tools, utilities, and applications -- directly on Windows, unmodified, without the overhead of a traditional virtual machine or dual-boot setup.
 
 This guide is meant to serve as a quick reference for setting it up yourself (as I recently had to do).
+
+<!-- more -->
 
 ## Overview
 

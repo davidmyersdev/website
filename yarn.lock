@@ -5001,6 +5001,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"luxon@git+https://github.com/voraciousdev/luxon#support-dual-imports":
+  version: 2.4.0
+  resolution: "luxon@https://github.com/voraciousdev/luxon.git#commit=a1f12f826823bc8cadc9c8eb9d06c414b2bdf23f"
+  checksum: 12278b86e847ef68f2d027c2a4523577c97cc7f85a0b56ad27d842bd80a1de6d953c85460330b080c3e57c66b26c127e09a25dd9283bd8b6f6c616a00ff62efa
+  languageName: node
+  linkType: hard
+
 "magic-string@npm:^0.25.7":
   version: 0.25.9
   resolution: "magic-string@npm:0.25.9"
@@ -7664,6 +7671,7 @@ __metadata:
     "@nuxt/content": ^2.0.1
     "@nuxtjs/tailwindcss": ^5.1.2
     eslint: ^8.16.0
+    luxon: "git+https://github.com/voraciousdev/luxon#support-dual-imports"
     nuxt: 3.0.0-rc.3
     typescript: ^4.7.2
   languageName: unknown

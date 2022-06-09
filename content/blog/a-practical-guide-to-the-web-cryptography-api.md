@@ -1,8 +1,15 @@
-# A Practical Guide to the Web Cryptography API
+---
+title: A Practical Guide to the Web Cryptography API
+tags: [encryption, javascript]
+createdAt: 2020-09-09T04:00:00.000Z
+updatedAt: 2020-09-09T04:00:00.000Z
+---
 
 Client-side encryption is a feature I had wanted to implement in [Octo](https://octo.app) for a while now. When it finally came time to tackle it, I was surprised at the sparse real-world examples on the topic. The documentation on [MDN](https://developer.mozilla.org/en-US/) is robust, but it requires a lot of jumping around to individual method APIs. I hope this article is helpful for anyone out there looking for guidance.
 
 *Note: The Web Cryptography API is asynchronous, so I use the async/await syntax in this article for concision.*
+
+<!-- more -->
 
 ### SubtleCrypto
 

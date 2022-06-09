@@ -1,10 +1,14 @@
-.markdown {
+.article {
   font-size: 1.2em;
 }
 
 .markdown {
   margin: auto;
   line-height: 1.75em
+}
+
+.markdown > *:last-child {
+  margin-bottom: 0;
 }
 
 .markdown h1,
@@ -17,6 +21,14 @@
   line-height: 1.25em;
   margin-bottom: 2rem;
   margin-top: 3rem;
+}
+
+.markdown header {
+  margin-bottom: 2rem;
+}
+
+.markdown header h1, .markdown header p:not(:last-child) {
+  margin-bottom: 0;
 }
 
 .markdown h1 {
@@ -46,13 +58,21 @@
   font-size: 1em;
 }
 
-.markdown p {
+.markdown p:not(:last-child) {
   margin-bottom: 2rem;
 }
 
 .markdown ul {
   margin-bottom: 2rem;
   list-style: inside;
+}
+
+.markdown blockquote {
+  background-color: #222222;
+  border-left: 0.5rem solid currentColor;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .markdown pre {
@@ -72,6 +92,7 @@
 .markdown code:not(.markdown pre code) {
   background-color: #121212;
   border-radius: 0.25rem;
+  color: #a6accd;
   padding: 0.25rem 0.5rem;
 }
 
@@ -97,5 +118,13 @@
   .markdown h1 {
     font-size: 3em;
     margin-bottom: 5rem;
+  }
+
+  .markdown header {
+    margin-bottom: 5rem;
+  }
+
+  .markdown header h1, .markdown header p:not(:last-child) {
+    margin-bottom: 0;
   }
 }

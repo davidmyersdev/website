@@ -1,10 +1,18 @@
-# A Practical Cheat Sheet for CSS Flexbox (Containers)
-
-[![The Flexbox Cheat Sheet](https://voracious.dev/sheets/flexbox-containers.png)](https://voracious.dev/sheets/flexbox-containers.png)
+---
+title: A Practical Cheat Sheet for CSS Flexbox (Containers)
+tags: [css]
+banner:
+  alt: The Flexbox Cheat Sheet
+  url: https://voracious.dev/sheets/flexbox-containers.png
+createdAt: 2021-07-27T04:00:00.000Z
+updatedAt: 2022-06-01T23:36:00.000Z
+---
 
 In this guide, you will learn how to use CSS Flexbox to manage some common layout patterns.
 
 I originally posted this Flexbox cheat sheet [on Twitter](https://twitter.com/voraciousdev/status/1419769440938364928), but the response was so positive that I decided to write it up here too! I've made a few updates since the original, and it's become a great resource to share with colleagues.
+
+<!-- more -->
 
 ## Default Behavior
 
