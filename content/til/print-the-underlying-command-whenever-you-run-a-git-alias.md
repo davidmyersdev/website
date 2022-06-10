@@ -10,17 +10,9 @@ updatedAt: 2022-06-10T15:58:44.231Z
 
 In a recent pair programming session, someone mentioned that it was a little hard to follow my command line workflow due to my regular use of [Git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases). As someone who enjoys pair programming, I decided to take that feedback to heart and figure out a way to make the experience better for my future pairing partners. I landed on a solution that prints the underlying command of a Git alias any time I run one.
 
-```bash
-$ git l
-git log --graph --oneline --max-count 3 # <- the underlying command
-* 9f363ea (HEAD -> main, origin/main, origin/HEAD) Fix publish timestamp
-* 54e7287 Add TIL series, update design, other improvements
-* f235f4f Add support for comments with Giscus
-```
-
 <!-- more -->
 
-The configuration for such an alias would _typically_ look something like this.
+Imagine you have an alias called `git l` that logs the last 3 lines of your `git log` output in a custom format. The configuration for such an alias might look something like this.
 
 ```ini
 # ~/.gitconfig
