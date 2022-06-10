@@ -11,6 +11,7 @@ export default defineNuxtConfig({
         'bash',
         'css',
         'html',
+        'ini',
         'js',
         'json',
         'powershell',

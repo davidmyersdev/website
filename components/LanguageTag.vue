@@ -6,6 +6,10 @@ const colorMaps = {
     aliases: [],
     values: [122, 121, 194],
   },
+  git: {
+    aliases: [],
+    values: [241, 78, 50],
+  },
   javascript: {
     aliases: ['js'],
     values: [241, 224, 90],
