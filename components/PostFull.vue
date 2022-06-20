@@ -17,7 +17,7 @@ const { path } = defineProps({ path: String })
         <header class="flex flex-col gap-4">
           <h1>{{ doc.title }}</h1>
           <p class="text-gray-400">Published on {{ DateTime.fromISO(doc.createdAt).toLocaleString(DateTime.DATE_HUGE) }}</p>
-          <div v-if="doc.tags" class="flex gap-2">
+          <div v-if="doc.tags" class="flex flex-wrap gap-2">
             <LanguageTag v-for="tag in doc.tags.sort()" :key="tag" :tag="tag" />
           </div>
         </header>

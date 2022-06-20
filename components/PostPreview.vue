@@ -19,7 +19,7 @@ const updatedAt = DateTime.fromISO(post.updatedAt)
     <section class="text-gray-400 leading-6 flex flex-col gap-4">
       <MarkdownRenderer :value="post.excerpt" class="markdown" />
     </section>
-    <div v-if="post.tags" class="flex gap-2">
+    <div v-if="post.tags" class="flex flex-wrap gap-2">
       <LanguageTag v-for="tag in post.tags.sort()" :key="tag" :tag="tag" />
     </div>
   </article>
