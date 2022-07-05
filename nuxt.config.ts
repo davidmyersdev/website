@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from 'nuxt'
+import sharp from 'sharp'
 
 export default defineNuxtConfig({
   buildModules: [
@@ -20,11 +21,17 @@ export default defineNuxtConfig({
       theme: 'material-palenight',
     },
   },
+  hooks: {
+    'build:before': () => {
+      // https://sharp.pixelplumbing.com/install#worker-threads
+      sharp()
+    },
+  },
   meta: {
     title: 'The Voracious Developer',
     link: [
       {
-        rel: 'icon', type: 'image/png', href: '/icon.png',
+        rel: 'icon', type: 'image/png', href: '/logo-dark-20x20.png',
       },
       {
         rel: 'preconnect',
@@ -42,9 +49,14 @@ export default defineNuxtConfig({
     ],
     meta: [
       {
-        content: 'I\'m a full-stack web developer with a voracious appetite for knowledge, practice, and improvement.',
+        content: 'I am a full-stack web developer with a voracious appetite for knowledge, practice, and improvement.',
         hid: 'description',
         name: 'description',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/og/default.png',
       },
     ],
     script: [
@@ -53,6 +65,11 @@ export default defineNuxtConfig({
         src: 'https://neon-instant.voracious.dev/script.js',
         'data-site': process.env.NODE_ENV === 'production' ? 'XUGBCQTL' : '',
       }),
+    ],
+  },
+  nitro: {
+    plugins: [
+      '~/server/plugins/content/index.ts',
     ],
   },
   router: {
