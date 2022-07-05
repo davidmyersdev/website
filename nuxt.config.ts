@@ -49,14 +49,29 @@ export default defineNuxtConfig({
     ],
     meta: [
       {
-        content: 'I am a full-stack web developer with a voracious appetite for knowledge, practice, and improvement.',
         hid: 'description',
         name: 'description',
+        content: 'I am a full-stack web developer with a voracious appetite for knowledge, practice, and improvement.',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'I am a full-stack web developer with a voracious appetite for knowledge, practice, and improvement.',
       },
       {
         hid: 'og:image',
         property: 'og:image',
         content: '/og/default.png',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'The Voracious Developer',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://voracious.dev',
       },
       {
         hid: 'twitter:card',
