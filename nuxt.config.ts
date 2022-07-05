@@ -58,6 +58,21 @@ export default defineNuxtConfig({
         property: 'og:image',
         content: '/og/default.png',
       },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'twitter:site',
+        name: 'twitter:site',
+        content: '@voraciousdev',
+      },
+      {
+        hid: 'twitter:creator',
+        name: 'twitter:creator',
+        content: '@voraciousdev',
+      },
     ],
     script: [
       ({
