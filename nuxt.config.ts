@@ -58,7 +58,7 @@ export default defineNuxtConfig({
       },
       {
         property: 'og:image',
-        content: 'https://voracious.dev/og/default.png',
+        content: 'https://cdn.voracious.dev/og/default.png',
       },
       {
         property: 'og:title',
@@ -74,7 +74,7 @@ export default defineNuxtConfig({
       },
       {
         name: 'twitter:image',
-        content: 'https://voracious.dev/og/default.png',
+        content: 'https://cdn.voracious.dev/og/default.png',
       },
       {
         name: 'twitter:site',
