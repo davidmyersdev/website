@@ -7,7 +7,7 @@ useHead({
     {
       hid: 'og:image',
       property: 'og:image',
-      content: `/og/content/${slug}.png`,
+      content: `https://voracious.dev/og/content/${slug}.png`,
     },
   ],
 })

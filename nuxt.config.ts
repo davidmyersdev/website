@@ -61,7 +61,7 @@ export default defineNuxtConfig({
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/og/default.png',
+        content: 'https://voracious.dev/og/default.png',
       },
       {
         hid: 'og:title',
