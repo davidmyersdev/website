@@ -58,7 +58,7 @@ export default defineNuxtConfig({
       },
       {
         property: 'og:image',
-        content: 'https://voracious.dev/og/default.png',
+        content: 'https://voracious.dev/og/default.png?id=asdf',
       },
       {
         property: 'og:title',
