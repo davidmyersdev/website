@@ -9,6 +9,15 @@
           "value": "application/json"
         }
       ]
+    },
+    {
+      "source": "/og/(.+).png",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/png"
+        }
+      ]
     }
   ],
   "redirects": [
