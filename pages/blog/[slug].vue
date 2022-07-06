@@ -5,7 +5,6 @@ const path = `/blog/${slug}`
 useHead({
   meta: [
     {
-      hid: 'og:image',
       property: 'og:image',
       content: `https://voracious.dev/og/content/${slug}.png`,
     },
