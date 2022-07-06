@@ -73,10 +73,6 @@ export default defineNuxtConfig({
         content: 'summary_large_image',
       },
       {
-        name: 'twitter:image',
-        content: 'https://cdn.voracious.dev/og/default.png',
-      },
-      {
         name: 'twitter:site',
         content: '@voraciousdev',
       },
