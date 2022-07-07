@@ -1,9 +1,7 @@
 ---
 title: Print the underlying command whenever you run a Git alias
 tags: [bash, git, til]
-series:
-  name: Today I Learned
-  path: /til
+series: til
 createdAt: 2022-06-10T15:58:44.231Z
 updatedAt: 2022-06-10T15:58:44.231Z
 ---

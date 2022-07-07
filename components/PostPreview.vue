@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { DateTime } from 'luxon'
+
 const { post } = defineProps({ post: Object })
 const createdAt = DateTime.fromISO(post.createdAt)
 const updatedAt = DateTime.fromISO(post.updatedAt)

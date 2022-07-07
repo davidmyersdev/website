@@ -17,7 +17,9 @@
     { "source": "/a-guide-to-web-development-on-the-windows-subsystem-for-linux-wsl", "destination": "/blog/a-guide-to-web-development-on-the-windows-subsystem-for-linux-wsl" },
     { "source": "/a-practical-cheat-sheet-for-css-flexbox", "destination": "/blog/a-practical-cheat-sheet-for-css-flexbox" },
     { "source": "/a-practical-guide-to-the-web-cryptography-api", "destination": "/blog/a-practical-guide-to-the-web-cryptography-api" },
-    { "source": "/an-introduction-to-vue-markdown-editor", "destination": "/blog/an-introduction-to-vue-markdown-editor" }
+    { "source": "/an-introduction-to-vue-markdown-editor", "destination": "/blog/an-introduction-to-vue-markdown-editor" },
+    { "source": "/til", "destination": "/series/til" },
+    { "source": "/til/:post*", "destination": "/blog/:post*" }
   ],
   "trailingSlash": false
 }

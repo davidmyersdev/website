@@ -1,9 +1,7 @@
 ---
 title: Install and use multiple Bundler versions
-tags: [til, ruby]
-series:
-  name: Today I Learned
-  path: /til
+tags: [ruby, til]
+series: til
 createdAt: 2022-06-09T14:05:06.248Z
 updatedAt: 2022-06-09T14:05:06.248Z
 ---
