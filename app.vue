@@ -21,7 +21,6 @@ const toggleMenu = () => {
       <a class="p-4" href="https://twitter.com/voraciousdev" rel="noopener" target="_blank">Twitter</a>
       <a class="p-4" href="https://github.com/voraciousdev" rel="noopener" target="_blank">GitHub</a>
       <a class="p-4" href="https://octo.app" rel="noopener" target="_blank">Octo</a>
-      <NuxtLink class="p-4" to="/sheets">Cheat Sheets</NuxtLink>
       <a class="p-4 text-[#fcdf51]" href="https://war.ukraine.ua/support-ukraine/" rel="noopener" target="_blank">Support Ukraine</a>
     </div>
   </nav>
