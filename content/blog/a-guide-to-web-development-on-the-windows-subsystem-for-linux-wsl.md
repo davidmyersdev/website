@@ -130,11 +130,11 @@ Using a traditional text editor with the WSL will require some extra configurati
 
 ### Atom
 
-Launching Atom from within WSL is not as simple as you might think. The `atom` binary needs to be executed in a Windows `cmd` context, and it needs the _Windows_ path of the specified directory instead of the Linux path. I created a [little helper script](https://gist.github.com/voraciousdev/1a1473ea36906c8f6830a17701e7fd21) to do exactly that. Download it to the `/usr/local/bin` directory and make it executable by running the following commands.
+Launching Atom from within WSL is not as simple as you might think. The `atom` binary needs to be executed in a Windows `cmd` context, and it needs the _Windows_ path of the specified directory instead of the Linux path. I created a [little helper script](https://gist.github.com/voracious/1a1473ea36906c8f6830a17701e7fd21) to do exactly that. Download it to the `/usr/local/bin` directory and make it executable by running the following commands.
 
 ```bash
 # download the atom script
-sudo curl -o /usr/local/bin/atom https://gist.githubusercontent.com/voraciousdev/1a1473ea36906c8f6830a17701e7fd21/raw/b8c697ca810022f2fc4be9eef3f72a54c6073b7e/atom.sh
+sudo curl -o /usr/local/bin/atom https://gist.githubusercontent.com/voracious/1a1473ea36906c8f6830a17701e7fd21/raw/b8c697ca810022f2fc4be9eef3f72a54c6073b7e/atom.sh
 
 # make it executable
 sudo chmod +x /usr/local/bin/atom

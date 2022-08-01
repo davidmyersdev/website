@@ -445,4 +445,4 @@ _Note: These examples have been set to `overflow: scroll` to prevent the page fr
 
 ## Closing
 
-Thanks for taking the time to check this out! I'd love to hear about how you're using Flexbox, so feel free to leave a comment below or reach out [on Twitter](https://twitter.com/voraciousdev) or [on GitHub](https://github.com/voraciousdev/community/discussions/1)! ✌️
+Thanks for taking the time to check this out! I'd love to hear about how you're using Flexbox, so feel free to leave a comment below or reach out [on Twitter](https://twitter.com/voraciousdev) or [on GitHub](https://github.com/voracious/community/discussions/1)! ✌️

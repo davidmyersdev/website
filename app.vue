@@ -19,7 +19,7 @@ const toggleMenu = () => {
     </div>
     <div :class="{ 'hidden': !showMenu }" class="flex flex-col items-center pb-4 lg:flex lg:flex-row lg:pb-0">
       <a class="p-4" href="https://twitter.com/voraciousdev" rel="noopener" target="_blank">Twitter</a>
-      <a class="p-4" href="https://github.com/voraciousdev" rel="noopener" target="_blank">GitHub</a>
+      <a class="p-4" href="https://github.com/voracious" rel="noopener" target="_blank">GitHub</a>
       <a class="p-4" href="https://octo.app" rel="noopener" target="_blank">Octo</a>
       <a class="p-4 text-[#fcdf51]" href="https://war.ukraine.ua/support-ukraine/" rel="noopener" target="_blank">Support Ukraine</a>
     </div>

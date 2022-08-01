@@ -39,7 +39,7 @@ const { path } = defineProps({ path: String })
       mapping="pathname"
       reactions-enabled="1"
       repo-id="MDEwOlJlcG9zaXRvcnkyNzg2ODE1NTg="
-      repo="voraciousdev/website"
+      repo="voracious/website"
       theme="transparent_dark"
     />
   </div>
