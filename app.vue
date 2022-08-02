@@ -31,4 +31,5 @@ const toggleMenu = () => {
 
 <style>
 @import '~/styles/main.css';
+@import '~/styles/fonts.css';
 </style>
