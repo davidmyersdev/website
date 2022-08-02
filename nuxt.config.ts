@@ -75,6 +75,7 @@ export default defineNuxtConfig({
     ],
     script: [
       ({
+        async: true,
         defer: true,
         src: 'https://neon-instant.voracious.dev/script.js',
         'data-site': process.env.NODE_ENV === 'production' ? 'XUGBCQTL' : '',
