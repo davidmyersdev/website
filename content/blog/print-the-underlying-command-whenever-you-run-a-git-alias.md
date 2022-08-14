@@ -3,7 +3,7 @@ title: Print the underlying command whenever you run a Git alias
 tags: [bash, git, til]
 series: til
 createdAt: 2022-06-10T15:58:44.231Z
-updatedAt: 2022-06-10T15:58:44.231Z
+updatedAt: 2022-08-14T16:46:44.231Z
 ---
 
 In a recent pair programming session, someone mentioned that it was a little hard to follow my command line workflow due to my regular use of [Git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases). As someone who enjoys pair programming, I decided to take that feedback to heart and figure out a way to make the experience better for my future pairing partners. I landed on a solution that prints the underlying command of a Git alias any time I run one.
@@ -42,5 +42,7 @@ git log --graph --oneline --max-count 3 # <- the underlying command
 * 54e7287 Add TIL series, update design, other improvements
 * f235f4f Add support for comments with Giscus
 ```
+
+Now, one problem with this approach compared to the typical `l = log`{lang="ini"} format above is that tab completion is broken. Check out [How to fix tab completion for complex Git aliases](https://voracious.dev/blog/how-to-fix-tab-completion-for-complex-git-aliases) to learn more about how to fix it!
 
 If you found this post useful, have a question, or just want to say hi, please leave a comment down below. Thanks for reading, and happy coding. ✌️
