@@ -17,6 +17,7 @@ export default defineNuxtConfig({
         'json',
         'powershell',
         'ts',
+        'yaml',
       ],
       theme: 'material-palenight',
     },
