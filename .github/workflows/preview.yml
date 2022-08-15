@@ -21,6 +21,4 @@ jobs:
       - run: yarn vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
       - run: yarn vercel build --token=${{ secrets.VERCEL_TOKEN }}
       - id: deploy
-        run: |
-          url=`yarn vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}`
-          echo "::set-output name=url::$url"
+        run: echo "::set-output name=url::$(yarn vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
