@@ -1,5 +1,7 @@
-import fs from 'fs'
+import chalk from 'chalk'
+import { existsSync } from 'fs'
 import { loadOptions } from 'nitropack'
+import { relative } from 'path'
 import sharp from 'sharp'
 import { appConfig } from '~/composables/appConfig'
 import type { ContentFile } from './index'
@@ -24,7 +26,7 @@ const makeLines = (text: string): string[] => {
 }
 
 const makeImage = async ({ lines, output }) => {
-  if (!fs.existsSync(output)) {
+  if (!existsSync(output)) {
     const logo = await sharp(appConfig.assets.logo).resize(60, 60).toBuffer()
     const site = Buffer.from(`
       <svg width="1920" height="80" viewBox="0 0 1920 80">
@@ -43,7 +45,7 @@ const makeImage = async ({ lines, output }) => {
       </svg>
     `)
 
-    return sharp({
+    await sharp({
       create: {
         background: { r: 23, g: 23, b: 23 },
         channels: 3,
@@ -58,6 +60,8 @@ const makeImage = async ({ lines, output }) => {
       ])
       .png()
       .toFile(output)
+
+    console.log(chalk.gray(`  ├─ ${relative(process.cwd(), output)}`))
   }
 }
 
