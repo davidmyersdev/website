@@ -87,6 +87,11 @@ export default defineNuxtConfig({
     plugins: [
       '~/server/plugins/content/index.ts',
     ],
+    prerender: {
+      routes: [
+        '/sitemap.xml',
+      ],
+    },
   },
   router: {
     trailingSlash: false,
