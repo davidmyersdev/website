@@ -1,16 +1,14 @@
 ---
-title: A Practical Cheat Sheet for CSS Flexbox (Containers)
+title: A Practical Cheat Sheet for CSS Flexbox (for Flex Items)
 tags: [css]
 banner:
-  alt: The Flexbox Cheat Sheet for Flex Containers
-  url: https://voracious.dev/sheets/flexbox-containers.png
-createdAt: 2021-07-27T04:00:00.000Z
-updatedAt: 2022-06-01T23:36:00.000Z
+  alt: The Flexbox Cheat Sheet (for Flex Items)
+  url: https://voracious.dev/sheets/flexbox-items.png
+createdAt: 2022-07-31T04:00:00.000Z
+updatedAt: 2022-07-31T04:00:00.000Z
 ---
 
-In this guide, you will learn how to use CSS Flexbox to manage some common layout patterns.
-
-I originally posted this Flexbox cheat sheet [on Twitter](https://twitter.com/voraciousdev/status/1419769440938364928), but the response was so positive that I decided to write it up here too! I've made a few updates since the original, and it's become a great resource to share with colleagues.
+This guide is a follow-up to my previous [CSS Flexbox post on Flex Containers]().
 
 <!-- more -->
 
@@ -445,4 +443,4 @@ _Note: These examples have been set to `overflow: scroll` to prevent the page fr
 
 ## Closing
 
-Thanks for taking the time to check this out! I'd love to hear about how you're using Flexbox, so feel free to leave a comment below or reach out [on Twitter](https://twitter.com/voraciousdev) or [on GitHub](https://github.com/voracious/community/discussions/1)! ✌️
+Thanks for taking the time to check this out! I'd love to hear about how you're using Flexbox, so feel free to leave a comment below or reach out [on Twitter](https://twitter.com/voraciousdev) or [on GitHub](https://github.com/voraciousdev/community/discussions/1)! ✌️
