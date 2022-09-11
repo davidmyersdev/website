@@ -18,7 +18,7 @@ const updatedAt = DateTime.fromISO(post.updatedAt)
       <span>Published on {{ createdAt.toLocaleString(DateTime.DATE_HUGE) }}</span>
     </p>
     <section class="text-gray-400 leading-6 flex flex-col gap-4">
-      <MarkdownRenderer :value="post.excerpt" class="markdown" />
+      <ContentRendererMarkdown :value="post" :excerpt="true" class="markdown" />
     </section>
     <div v-if="post.tags" class="flex flex-wrap gap-2">
       <LanguageTag v-for="tag in post.tags.sort()" :key="tag" :tag="tag" />

@@ -12,3 +12,6 @@ export const series = async (file: ContentFile) => {
     }
   }
 }
+
+// These files are autoloaded by Nuxt, so we must provide a default export.
+export default () => {}

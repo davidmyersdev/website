@@ -1,17 +1,17 @@
 {
   "devDependencies": {
-    "@giscus/vue": "^2.0.6",
-    "@nuxt/content": "^2.0.1",
-    "@nuxtjs/tailwindcss": "^5.1.2",
-    "@types/sharp": "^0.30.4",
+    "@giscus/vue": "^2.2.0",
+    "@nuxt/content": "^2.1.0",
+    "@nuxtjs/tailwindcss": "^5.3.3",
+    "@types/sharp": "^0.30.5",
     "chalk": "^5.0.1",
-    "eslint": "^8.19.0",
-    "luxon": "^3.0.1",
-    "nuxt": "^3.0.0-rc.6",
-    "sharp": "^0.30.7",
+    "eslint": "^8.23.0",
+    "luxon": "^3.0.3",
+    "nuxt": "3.0.0-rc.9",
+    "sharp": "^0.31.0",
     "sitemap": "^7.1.1",
-    "typescript": "^4.7.4",
-    "vercel": "^28.0.1"
+    "typescript": "^4.8.3",
+    "vercel": "^28.2.4"
   },
   "packageManager": "yarn@3.2.2",
   "private": true,

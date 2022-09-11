@@ -82,3 +82,6 @@ export const og = async (file: ContentFile) => {
     await makeImage({ lines: [name], output })
   }
 }
+
+// These files are autoloaded by Nuxt, so we must provide a default export.
+export default () => {}
