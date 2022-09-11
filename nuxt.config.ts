@@ -99,6 +99,11 @@ export default defineNuxtConfig({
       strict: true,
     },
   },
+  runtimeConfig: {
+    public: {
+      baseUrl: 'https://voracious.dev',
+    },
+  },
   ssr: true,
   tailwindcss: {
     configPath: '~/tailwind.config.cjs',

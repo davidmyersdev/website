@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import Giscus from '@giscus/vue'
 import { DateTime } from 'luxon'
 
 const { path } = defineProps({ path: String })
@@ -29,20 +28,8 @@ const { path } = defineProps({ path: String })
         <ContentRenderer :value="doc" />
       </article>
     </ContentDoc>
-    <Author />
-    <Giscus
-      category-id="DIC_kwDOEJxX1s4CPfTZ"
-      category="Comments"
-      emit-metadata="1"
-      input-position="top"
-      lang="en"
-      mapping="pathname"
-      reactions-enabled="1"
-      repo-id="MDEwOlJlcG9zaXRvcnkyNzg2ODE1NTg="
-      repo="voracious/website"
-      theme="transparent_dark"
-    />
     <Newsletter />
+    <Comments />
   </div>
 </template>
 
