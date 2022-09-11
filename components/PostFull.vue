@@ -42,6 +42,7 @@ const { path } = defineProps({ path: String })
       repo="voracious/website"
       theme="transparent_dark"
     />
+    <Newsletter />
   </div>
 </template>
 
