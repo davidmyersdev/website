@@ -43,11 +43,11 @@ export default defineNuxtConfig({
     meta: [
       {
         name: 'description',
-        content: 'I am a full-stack web developer with a voracious appetite for knowledge, practice, and improvement.',
+        content: 'Stay current in the evolving world of web development.',
       },
       {
         property: 'og:description',
-        content: 'I am a full-stack web developer with a voracious appetite for knowledge, practice, and improvement.',
+        content: 'Stay current in the evolving world of web development.',
       },
       {
         property: 'og:image',
