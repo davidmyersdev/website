@@ -124,6 +124,10 @@ main .gsc-loading-image {
 
 /* The following styles are by @voracious */
 
+html {
+  background-color: rgb(23, 23, 23);
+}
+
 main {
   --color-fg-default: #ddd;
   --color-canvas-default: rgb(18, 18, 18);
@@ -148,6 +152,10 @@ main {
 
 .gsc-comment-box {
   border-color: transparent;
+}
+
+.gsc-header {
+  padding: 0.5rem;
 }
 
 .gsc-reactions-count {
