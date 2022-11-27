@@ -60,10 +60,6 @@ export default defineNuxtConfig({
       title: 'The Voracious Developer',
     },
   },
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/tailwindcss',
-  ],
   content: {
     highlight: {
       preload: [
@@ -86,6 +82,11 @@ export default defineNuxtConfig({
       sharp()
     },
   },
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt',
+  ],
   nitro: {
     plugins: [
       '~/server/plugins/content/index.ts',
@@ -102,6 +103,12 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
+    email: {
+      api: {
+        token: 'email_api_token',
+        url: 'email_api_url',
+      },
+    },
     public: {
       baseUrl: 'https://voracious.dev',
     },

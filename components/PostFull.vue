@@ -32,7 +32,3 @@ const { path } = defineProps({ path: String })
     <Comments />
   </div>
 </template>
-
-<style>
-@import '~/styles/article.css';
-</style>

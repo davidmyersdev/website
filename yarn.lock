@@ -1294,6 +1294,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/luxon@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@types/luxon@npm:3.1.0"
+  checksum: 04768029342ad76fc2a9339436c143ea64797b35cf9b03ddded787c13eae30f0ca1246e51c2c5365ed912f98068e13a967a3931b137eb4585248a0ad7ec3fa86
+  languageName: node
+  linkType: hard
+
 "@types/mdast@npm:^3.0.0":
   version: 3.0.10
   resolution: "@types/mdast@npm:3.0.10"
@@ -1390,6 +1397,13 @@ __metadata:
   version: 2.0.6
   resolution: "@types/unist@npm:2.0.6"
   checksum: 25cb860ff10dde48b54622d58b23e66214211a61c84c0f15f88d38b61aa1b53d4d46e42b557924a93178c501c166aa37e28d7f6d994aba13d24685326272d5db
+  languageName: node
+  linkType: hard
+
+"@types/web-bluetooth@npm:^0.0.16":
+  version: 0.0.16
+  resolution: "@types/web-bluetooth@npm:0.0.16"
+  checksum: f68a630d062202a25c46d48686ebae1cf429dc70b4578fcf13b8357b2db63e4aedfb6f6d752bd388366be46ebd19c1c9de45f8a15c2631bb79e904fdfc454f94
   languageName: node
   linkType: hard
 
@@ -1740,6 +1754,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/core@npm:9.6.0, @vueuse/core@npm:^9.6.0":
+  version: 9.6.0
+  resolution: "@vueuse/core@npm:9.6.0"
+  dependencies:
+    "@types/web-bluetooth": ^0.0.16
+    "@vueuse/metadata": 9.6.0
+    "@vueuse/shared": 9.6.0
+    vue-demi: "*"
+  checksum: 2831931d71824f6a02f49cc42bc454a59a24b83a29e7902bbd9fce7e814947d466dbced2dad364c51a352c387869a6a44f2e38bd2ec2b38989158377dc7730d6
+  languageName: node
+  linkType: hard
+
 "@vueuse/head@npm:^1.0.15":
   version: 1.0.18
   resolution: "@vueuse/head@npm:1.0.18"
@@ -1751,6 +1777,37 @@ __metadata:
   peerDependencies:
     vue: ">=2.7 || >=3"
   checksum: 79132f9c5accccbe132daafbdab992d2f8c207a52e073576a9816a9589d16b15dbdf43d1c00add6aea247fe5832145ddac95c739f4406f086a43ed42130f6350
+  languageName: node
+  linkType: hard
+
+"@vueuse/metadata@npm:9.6.0":
+  version: 9.6.0
+  resolution: "@vueuse/metadata@npm:9.6.0"
+  checksum: 6873032389f73571396478d37dad37a9164df5ad487e08b338135fcfd2bbdcc519351a08d4b3b4b54ea8a90de06f9d01b5fd351332a26b5ed5cf8322cb9ce9ab
+  languageName: node
+  linkType: hard
+
+"@vueuse/nuxt@npm:^9.6.0":
+  version: 9.6.0
+  resolution: "@vueuse/nuxt@npm:9.6.0"
+  dependencies:
+    "@nuxt/kit": ^3.0.0-rc.13
+    "@vueuse/core": 9.6.0
+    "@vueuse/metadata": 9.6.0
+    local-pkg: ^0.4.2
+    vue-demi: "*"
+  peerDependencies:
+    nuxt: ^3.0.0-rc.9
+  checksum: 4f91b3d16af5f0bd20d36b6b2a44bc6e9f61058727d5144852f7558cc4786045688d317770e981a6986e8de5dae8fa11c674849c75377f56c5bec07d4d31d809
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:9.6.0":
+  version: 9.6.0
+  resolution: "@vueuse/shared@npm:9.6.0"
+  dependencies:
+    vue-demi: "*"
+  checksum: 33be07a571ba607500f3115c9c4c3cc411644ad62da8241bf9a48b7a2eaadc2523520f4ba65bb87d6db15db8a43bce1599b5fac757d4f6653cacf99927eda280
   languageName: node
   linkType: hard
 
@@ -9176,7 +9233,10 @@ __metadata:
     "@giscus/vue": ^2.2.0
     "@nuxt/content": ^2.2.2
     "@nuxtjs/tailwindcss": ^6.1.3
+    "@types/luxon": ^3.1.0
     "@types/sharp": ^0.30.5
+    "@vueuse/core": ^9.6.0
+    "@vueuse/nuxt": ^9.6.0
     chalk: ^5.0.1
     eslint: ^8.23.0
     luxon: ^3.0.3
@@ -10817,6 +10877,22 @@ __metadata:
   dependencies:
     ufo: ^1.0.0
   checksum: c1e399dcf81190b433a31be24c019354ff566f43e1d1d1dc6e1f6acb6d7ed52645445e93635d01fb7ea68cb0a11ad5487a98fd70b3a6a302bd3b1660b814c5de
+  languageName: node
+  linkType: hard
+
+"vue-demi@npm:*":
+  version: 0.13.11
+  resolution: "vue-demi@npm:0.13.11"
+  peerDependencies:
+    "@vue/composition-api": ^1.0.0-rc.1
+    vue: ^3.0.0-0 || ^2.6.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+  bin:
+    vue-demi-fix: bin/vue-demi-fix.js
+    vue-demi-switch: bin/vue-demi-switch.js
+  checksum: 0fbe9bf8ab7fe498ffa2bbd0cfc8f6f43a6bbaa5eda3e20ef1b70dca7c8b0ddb216a7ff2f632b694fe0735805638975abb441c621ec0bd2e6d4656353f316c15
   languageName: node
   linkType: hard
 

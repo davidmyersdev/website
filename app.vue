@@ -30,6 +30,7 @@ const toggleMenu = () => {
 </template>
 
 <style>
-@import '~/styles/main.css';
 @import '~/styles/fonts.css';
+@import '~/styles/main.css';
+@import '~/styles/markdown.css';
 </style>
