@@ -2,6 +2,7 @@
 const { series } = defineProps({ series: String })
 const posts = await queryContent('/blog')
   .only(['_path', 'body', 'createdAt', 'excerpt', 'series', 'tags', 'title', 'updatedAt'])
+  // @ts-ignore
   .where({ series: { slug: series } })
   .sort({ createdAt: -1 })
   .find()

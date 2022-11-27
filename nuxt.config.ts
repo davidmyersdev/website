@@ -1,8 +1,66 @@
-import { defineNuxtConfig } from 'nuxt'
 import sharp from 'sharp'
 
 export default defineNuxtConfig({
-  buildModules: [
+  app: {
+    head: {
+      link: [
+        {
+          href: '/logo-dark-20x20.png',
+          rel: 'icon',
+          type: 'image/png',
+        },
+        {
+          crossorigin: '',
+          href: 'https://fonts.gstatic.com',
+          rel: 'preconnect',
+        },
+      ],
+      meta: [
+        {
+          name: 'description',
+          content: 'Stay current in the evolving world of web development.',
+        },
+        {
+          property: 'og:description',
+          content: 'Stay current in the evolving world of web development.',
+        },
+        {
+          property: 'og:image',
+          content: 'https://cdn.voracious.dev/og/default.png',
+        },
+        {
+          property: 'og:title',
+          content: 'The Voracious Developer',
+        },
+        {
+          property: 'og:url',
+          content: 'https://voracious.dev',
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:site',
+          content: '@voraciousdev',
+        },
+        {
+          name: 'twitter:creator',
+          content: '@voraciousdev',
+        },
+      ],
+      script: [
+        ({
+          async: true,
+          defer: true,
+          src: 'https://neon-instant.voracious.dev/script.js',
+          'data-site': process.env.NODE_ENV === 'production' ? 'XUGBCQTL' : '',
+        }),
+      ],
+      title: 'The Voracious Developer',
+    },
+  },
+  modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
   ],
@@ -28,61 +86,6 @@ export default defineNuxtConfig({
       sharp()
     },
   },
-  meta: {
-    title: 'The Voracious Developer',
-    link: [
-      {
-        rel: 'icon', type: 'image/png', href: '/logo-dark-20x20.png',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://fonts.gstatic.com',
-        crossorigin: 'true',
-      },
-    ],
-    meta: [
-      {
-        name: 'description',
-        content: 'Stay current in the evolving world of web development.',
-      },
-      {
-        property: 'og:description',
-        content: 'Stay current in the evolving world of web development.',
-      },
-      {
-        property: 'og:image',
-        content: 'https://cdn.voracious.dev/og/default.png',
-      },
-      {
-        property: 'og:title',
-        content: 'The Voracious Developer',
-      },
-      {
-        property: 'og:url',
-        content: 'https://voracious.dev',
-      },
-      {
-        name: 'twitter:card',
-        content: 'summary_large_image',
-      },
-      {
-        name: 'twitter:site',
-        content: '@voraciousdev',
-      },
-      {
-        name: 'twitter:creator',
-        content: '@voraciousdev',
-      },
-    ],
-    script: [
-      ({
-        async: true,
-        defer: true,
-        src: 'https://neon-instant.voracious.dev/script.js',
-        'data-site': process.env.NODE_ENV === 'production' ? 'XUGBCQTL' : '',
-      }),
-    ],
-  },
   nitro: {
     plugins: [
       '~/server/plugins/content/index.ts',
@@ -94,7 +97,6 @@ export default defineNuxtConfig({
     },
   },
   router: {
-    trailingSlash: false,
     options: {
       strict: true,
     },
@@ -108,5 +110,4 @@ export default defineNuxtConfig({
   tailwindcss: {
     configPath: '~/tailwind.config.cjs',
   },
-  target: 'static',
 })

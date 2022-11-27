@@ -6,7 +6,7 @@ import sharp from 'sharp'
 import { appConfig } from '~/composables/appConfig'
 import type { ContentFile } from './index'
 
-const calculateLineOffset = (lineCount, index, fontSize) => {
+const calculateLineOffset = (lineCount: number, index: number, fontSize: number) => {
   const rowHeight = fontSize * 1.25
   const totalHeight = rowHeight * lineCount
 
@@ -25,7 +25,7 @@ const makeLines = (text: string): string[] => {
   return [text.slice(0, index), text.slice(index)]
 }
 
-const makeImage = async ({ lines, output }) => {
+const makeImage = async ({ lines, output }: { lines: string[], output: string }) => {
   if (!existsSync(output)) {
     const logo = await sharp(appConfig.assets.logo).resize(60, 60).toBuffer()
     const site = Buffer.from(`
@@ -66,7 +66,7 @@ const makeImage = async ({ lines, output }) => {
 }
 
 const makeName = (file: ContentFile) => {
-  return file._id.split(':').pop().replace(/\.md$/, '')
+  return file._id.split(':').pop()?.replace(/\.md$/, '')
 }
 
 export const og = async (file: ContentFile) => {
