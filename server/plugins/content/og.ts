@@ -1,6 +1,6 @@
+import { useNitro } from '@nuxt/kit'
 import chalk from 'chalk'
 import { existsSync } from 'fs'
-import { loadOptions } from 'nitropack'
 import { relative } from 'path'
 import sharp from 'sharp'
 import { appConfig } from '~/composables/appConfig'
@@ -70,14 +70,15 @@ const makeName = (file: ContentFile) => {
 }
 
 export const og = async (file: ContentFile) => {
-  const options = await loadOptions()
-  const output = `${options.output.publicDir}/og/content/${makeName(file)}.png`
+  const { options: { output: { publicDir } } } = useNitro()
+
+  const output = `${publicDir}/og/content/${makeName(file)}.png`
 
   await makeImage({ lines: makeLines(file.title), output })
 
   if (typeof file.series === 'object') {
     const name = `${file.series.name} (Series)`
-    const output = `${options.output.publicDir}/og/content/${file.series.slug}.png`
+    const output = `${publicDir}/og/content/${file.series.slug}.png`
 
     await makeImage({ lines: [name], output })
   }
