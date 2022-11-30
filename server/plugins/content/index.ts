@@ -1,4 +1,4 @@
-import { NitroApp } from 'nitropack'
+import { type NitroApp } from 'nitropack'
 import { og } from './og'
 import { series } from './series'
 

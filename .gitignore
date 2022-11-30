@@ -1,6 +1,8 @@
 *.log
 .DS_Store
+.cache
 .env
+.nitro
 .nuxt
 .output
 .vercel
