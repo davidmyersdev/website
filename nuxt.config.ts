@@ -113,6 +113,7 @@ export default defineNuxtConfig({
       baseUrl: 'https://voracious.dev',
     },
   },
+  sourcemap: true,
   ssr: true,
   tailwindcss: {
     configPath: '~/tailwind.config.cjs',
