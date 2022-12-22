@@ -13,6 +13,7 @@ const { path } = defineProps({ path: String })
         </NuxtLink>
       </p>
       <article class="article markdown w-full">
+        <aside v-if="doc.wip" class="text-gray-400"><em>This article is a work in progress.</em></aside>
         <header class="flex flex-col gap-4">
           <h1>{{ doc.title }}</h1>
           <p class="text-gray-400">Published on {{ DateTime.fromISO(doc.createdAt).toLocaleString(DateTime.DATE_HUGE) }}</p>
