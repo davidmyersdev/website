@@ -1,6 +1,6 @@
 ---
 title: Publish TypeScript packages the right way
-tags: [javascript, oss, typescript]
+tags: [JavaScript, OSS, TypeScript]
 createdAt: 2022-12-22T16:29:29.863Z
 updatedAt: 2022-12-22T16:29:29.863Z
 wip: true
@@ -38,7 +38,6 @@ This strategy directs TypeScript to resolve imports as [CommonJS modules](https:
 An example of this strategy is the [`examples/app-node`](https://github.com/voracious/typescript-example/blob/fd5d97027e54542eff6ccc1b644a48ed41b419ab/examples/app-node) package. In [`src/index.ts`](https://github.com/voracious/typescript-example/blob/fd5d97027e54542eff6ccc1b644a48ed41b419ab/examples/app-node/src/index.ts#L1), it imports a module from a package called`lib` that can be found at [`examples/lib`](https://github.com/voracious/typescript-example/blob/fd5d97027e54542eff6ccc1b644a48ed41b419ab/examples/lib).
 
 ```ts
-// ./examples/app-node/src/index.ts#L1
 import { doTheThing } from 'lib'
 ```
 
@@ -49,7 +48,6 @@ The `lib` package defines `main` as `./cjs/dist/index.js`, and if you hover over
 In that same `src/index.ts` file, [the next line](https://github.com/voracious/typescript-example/blob/fd5d97027e54542eff6ccc1b644a48ed41b419ab/examples/app-node/src/index.ts#L2) imports a module from a _subpath_ of the `lib` package.
 
 ```ts
-// ./examples/app-node/src/index.ts#L2
 import { doSomethingElse } from 'lib/subpath'
 ```
 
@@ -68,4 +66,65 @@ The amount of work it takes to build a universal package, one that works in most
 1. The package provides exports for both CommonJS and ES modules
 2. The package includes one or more subpaths
 
-To help you get started, there are boilerplate packages available in the [typescript-example]() repository under the `starter-app` and `starter-lib` directories.
+To help you get started, there are boilerplate packages available in the [typescript-example](https://github.com/voracious/typescript-example) repository under the `starter-app` and `starter-lib` directories.
+
+### Create the `example-lib` project
+
+To start, create a new folder called `example-lib`. Inside that folder, run `npm init -y` to create a `package.json` that looks something like this.
+
+```json
+{
+  "name": "example-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
+Next, install TypeScript with `npm install -D typescript`. Then, create the following `tsconfig.json`.
+
+```json
+{
+  // https://aka.ms/tsconfig
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ESNext"
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
+```
+
+This configuration will instruct TypeScript to compile your code to ES modules with type declarations and source maps. Create the entrypoint to your library at `src/index.ts`, and add the following code to it.
+
+```ts
+export const greeting = (name: string) => {
+  const isMorning = (new Date()).getHours() < 12
+
+  if (isMorning) {
+    return `Good morning, ${name}`
+  }
+
+  return `Good day, ${name}`
+}
+```
+
+Now, run `npx tsc` to compile the project to the `dist` folder. If things are set up correctly, you should see the following type declaration in `dist/index.d.ts`.
+
+```ts
+export declare const greeting: (name: string) => string
+```

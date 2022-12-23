@@ -1,7 +1,12 @@
 <script lang="ts" setup>
-const { tag } = defineProps({ tag: String })
+const props = defineProps<{ tag: string }>()
 
-const colorMaps = {
+interface LanguageDefinition {
+  aliases: string[],
+  values: [number, number, number],
+}
+
+const colorMaps: Record<string, LanguageDefinition> = {
   css: {
     aliases: [],
     values: [122, 121, 194],
@@ -43,14 +48,20 @@ const colorMaps = {
     values: [65, 184, 131],
   },
 }
-const colorMap = colorMaps[tag] || Object.values(colorMaps).find(map => map.aliases.includes(tag)) || {
-  values: [160, 160, 160],
-}
-const color = colorMap.values.join(', ')
-const style = {
-  color: `rgb(${color})`,
-  backgroundColor: `rgba(${color}, 0.2)`,
-}
+const color = computed(() => {
+  const lowerTag = props.tag.toLowerCase()
+  const colorMap = colorMaps[lowerTag] || Object.values(colorMaps).find(map => map.aliases.includes(lowerTag)) || {
+    values: [160, 160, 160],
+  }
+
+  return colorMap.values.join(', ')
+})
+const style = computed(() => {
+  return {
+    color: `rgb(${color.value})`,
+    backgroundColor: `rgba(${color.value}, 0.2)`,
+  }
+})
 </script>
 
 <template>
