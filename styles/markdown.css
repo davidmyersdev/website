@@ -4,7 +4,8 @@
 
 .markdown {
   margin: auto;
-  line-height: 1.75em
+  line-height: 1.75em;
+  width: 100%;
 }
 
 .markdown > *:last-child {
