@@ -1,6 +1,6 @@
 ---
-title: How to convert an array of values into a union type with TypeScript
-tags: [til, typescript]
+title: How to convert an array of values into a Union type with TypeScript
+tags: [TIL, TypeScript]
 series: til
 createdAt: 2023-01-17T22:55:10.363Z
 updatedAt: 2023-01-17T22:55:10.363Z
