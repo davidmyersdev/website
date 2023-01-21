@@ -1,6 +1,6 @@
 ---
 title: How to deploy to Vercel with GitHub Actions
-tags: [automation, github, vercel]
+tags: [Automation, CI, GitHub, Vercel]
 createdAt: 2022-08-14T23:04:29.863Z
 updatedAt: 2022-08-14T23:04:29.863Z
 ---

@@ -1,6 +1,6 @@
 ---
 title: A Practical Cheat Sheet for CSS Flexbox (Containers)
-tags: [css]
+tags: [CSS]
 banner:
   alt: The Flexbox Cheat Sheet
   url: https://voracious.dev/sheets/flexbox-containers.png

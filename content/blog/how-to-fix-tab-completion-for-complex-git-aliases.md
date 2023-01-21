@@ -1,6 +1,6 @@
 ---
 title: How to fix tab completion for complex Git aliases
-tags: [bash, git, til]
+tags: [Bash, Git, TIL]
 series: til
 createdAt: 2022-08-01T20:58:44.231Z
 updatedAt: 2022-08-01T20:58:44.231Z

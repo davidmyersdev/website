@@ -1,6 +1,6 @@
 ---
 title: An Introduction to vue-markdown-editor
-tags: [javascript, vue]
+tags: [JavaScript, Vue]
 createdAt: 2020-12-28T05:00:00.000Z
 updatedAt: 2020-12-28T05:00:00.000Z
 ---

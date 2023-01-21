@@ -1,6 +1,6 @@
 ---
 title: A Practical Guide to the Web Cryptography API
-tags: [encryption, javascript]
+tags: [Encryption, JavaScript]
 createdAt: 2020-09-09T04:00:00.000Z
 updatedAt: 2020-09-09T04:00:00.000Z
 ---

@@ -1,6 +1,6 @@
 ---
 title: Detect the intersection of multiple ranges in JavaScript
-tags: [javascript, mathematics, typescript]
+tags: [JavaScript, Mathematics, TypeScript]
 createdAt: 2022-06-20T23:04:29.863Z
 updatedAt: 2022-06-20T23:04:29.863Z
 ---

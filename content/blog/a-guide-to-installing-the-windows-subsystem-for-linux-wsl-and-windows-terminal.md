@@ -1,6 +1,6 @@
 ---
 title: A Guide to Installing the Windows Subsystem for Linux (WSL) and Windows Terminal
-tags: [bash, linux, windows]
+tags: [Bash, Linux, Windows]
 createdAt: 2021-01-02T05:00:00.000Z
 updatedAt: 2021-01-02T05:00:00.000Z
 ---

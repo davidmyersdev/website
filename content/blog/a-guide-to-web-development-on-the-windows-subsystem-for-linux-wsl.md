@@ -1,6 +1,6 @@
 ---
 title: A Guide to Web Development on the Windows Subsystem for Linux (WSL)
-tags: [bash, linux, windows]
+tags: [Bash, Linux, Windows]
 createdAt: 2020-12-28T05:00:00.000Z
 updatedAt: 2020-12-28T05:00:00.000Z
 ---

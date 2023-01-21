@@ -1,6 +1,6 @@
 ---
 title: A Guide to Customizing the Zsh Shell Prompt
-tags: [zsh]
+tags: [Zsh]
 createdAt: 2021-03-11T05:00:00.000Z
 updatedAt: 2021-03-11T05:00:00.000Z
 ---

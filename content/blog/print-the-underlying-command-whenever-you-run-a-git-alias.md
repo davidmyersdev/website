@@ -1,6 +1,6 @@
 ---
 title: Print the underlying command whenever you run a Git alias
-tags: [bash, git, til]
+tags: [Bash, Git, TIL]
 series: til
 createdAt: 2022-06-10T15:58:44.231Z
 updatedAt: 2022-08-14T16:46:44.231Z
