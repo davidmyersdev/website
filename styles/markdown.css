@@ -133,6 +133,7 @@
 
 .markdown .embed .cm-editor {
   border-radius: 0.25rem;
+  overflow: hidden;
 }
 
 @media (min-width: 1024px) {

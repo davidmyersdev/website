@@ -4,6 +4,10 @@ export const appConfig = {
   },
   series: [
     {
+      name: 'Learn CodeMirror',
+      slug: 'learn-codemirror',
+    },
+    {
       name: 'Today I Learned',
       slug: 'til',
     },
