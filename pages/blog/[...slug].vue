@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const slug = useRoute().params.slug
+const slug = [useRoute().params.slug].flat().join('/')
 const path = `/blog/${slug}`
 
 useHead({
