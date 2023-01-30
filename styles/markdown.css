@@ -65,8 +65,12 @@
 
 .markdown ol,
 .markdown ul {
-  margin-bottom: 2rem;
   list-style: inside;
+}
+
+.markdown ol:not(:last-child),
+.markdown ul:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 .markdown ol li {
@@ -85,18 +89,21 @@
   padding: 1rem;
 }
 
+.markdown code, .markdown .code, .markdown .cm-scroller {
+  font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
 .markdown pre {
-  background-color: #121212;
-  border-radius: 0.25rem;
   display: flex;
-  margin-bottom: 2rem;
-  overflow-x: auto;
-  padding: 1rem;
 }
 
 .markdown pre code {
   display: flex;
   flex-direction: column;
+}
+
+.markdown .has-highlights .line:not(.highlight) {
+  opacity: 0.5;
 }
 
 .markdown code:not(.markdown pre code) {
@@ -122,6 +129,10 @@
 
 .markdown .embed {
   margin-bottom: 2rem;
+}
+
+.markdown .embed .cm-editor {
+  border-radius: 0.25rem;
 }
 
 @media (min-width: 1024px) {
