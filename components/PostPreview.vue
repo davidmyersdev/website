@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { DateTime } from 'luxon'
 
-const { post } = defineProps({ post: Object })
+const { post } = defineProps<{ post: Record<string, any> }>()
 const createdAt = DateTime.fromISO(post.createdAt)
-const updatedAt = DateTime.fromISO(post.updatedAt)
+const _updatedAt = DateTime.fromISO(post.updatedAt)
 </script>
 
 <template>
@@ -17,11 +17,11 @@ const updatedAt = DateTime.fromISO(post.updatedAt)
     <p v-if="createdAt.isValid" class="text-gray-400">
       <span>Published on {{ createdAt.toLocaleString(DateTime.DATE_HUGE) }}</span>
     </p>
-    <section class="text-gray-400 leading-6 flex flex-col gap-4">
-      <ContentRendererMarkdown :value="post" :excerpt="true" class="markdown" />
-    </section>
     <div v-if="post.tags" class="flex flex-wrap gap-2">
       <LanguageTag v-for="tag in post.tags.sort()" :key="tag" :tag="tag" />
     </div>
+    <!-- <section class="text-gray-400 leading-6 flex flex-col gap-4">
+      <ContentRendererMarkdown :value="post" :excerpt="true" class="markdown" />
+    </section> -->
   </article>
 </template>
