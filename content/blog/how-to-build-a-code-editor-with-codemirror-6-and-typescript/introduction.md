@@ -103,7 +103,7 @@ A starter package called `codemirror` is also available, and that is the one we 
 Once you install the package, we can start implementing the editor.
 
 ```shell
-npm install --save codemirror
+npm install codemirror
 ```
 
 After installing the package, add the following code to `src/main.ts`. This will get a minimal editor up and running.
@@ -197,7 +197,7 @@ The `basicSetup` module really does come pre-configured with a lot of nifty feat
 Install the JavaScript package.
 
 ```shell
-npm install --save @codemirror/lang-javascript
+npm install @codemirror/lang-javascript
 ```
 
 Now, import the `javascript` module and add it to your `extensions` array.
@@ -241,7 +241,7 @@ Before we replace `basicSetup` with its associated modules, let's migrate to the
 Install the following packages.
 
 ```shell
-npm install --save @codemirror/state @codemirror/view
+npm install @codemirror/state @codemirror/view
 ```
 
 Replace the `EditorView` import with an import from `@codemirror/view` rather than `codemirror`. The initialization of `EditorView` is the same.
@@ -294,7 +294,7 @@ With `EditorState` configured, let's move on to replacing `basicSetup` with its 
 Install the remaining packages that are used by `basicSetup`.
 
 ```shell
-npm install --save @codemirror/autocomplete @codemirror/commands @codemirror/language @codemirror/lint @codemirror/search
+npm install @codemirror/autocomplete @codemirror/commands @codemirror/language @codemirror/lint @codemirror/search
 ```
 
 Import the extensions and register them just as they are registered in the `basicSetup` module.
