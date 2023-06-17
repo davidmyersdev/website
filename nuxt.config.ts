@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:title',
-          content: 'The Voracious Developer',
+          content: 'David Myers | Dev',
         },
         {
           property: 'og:url',
@@ -42,11 +42,11 @@ export default defineNuxtConfig({
         },
         {
           name: 'twitter:site',
-          content: '@voraciousdev',
+          content: '@davidmyersdev',
         },
         {
           name: 'twitter:creator',
-          content: '@voraciousdev',
+          content: '@davidmyersdev',
         },
       ],
       script: [
@@ -57,7 +57,7 @@ export default defineNuxtConfig({
           'data-site': process.env.NODE_ENV === 'production' ? 'XUGBCQTL' : '',
         }),
       ],
-      title: 'The Voracious Developer',
+      title: 'David Myers | Dev',
     },
   },
   content: {

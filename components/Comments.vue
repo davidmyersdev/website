@@ -16,7 +16,7 @@ const themeUrl = `${useRuntimeConfig().public.baseUrl}/assets/giscus.css`
     mapping="pathname"
     reactions-enabled="1"
     repo-id="MDEwOlJlcG9zaXRvcnkyNzg2ODE1NTg="
-    repo="voracious/website"
+    repo="davidmyersdev/website"
     :theme="themeUrl"
   />
 </template>
