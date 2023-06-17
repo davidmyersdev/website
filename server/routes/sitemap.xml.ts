@@ -5,7 +5,7 @@ import { appConfig } from '~/composables/appConfig'
 export default defineEventHandler(async (event) => {
   const posts = await serverQueryContent(event).find()
   const sitemap = new SitemapStream({
-    hostname: 'https://voracious.dev'
+    hostname: 'https://davidmyers.dev'
   })
 
   // Homepage

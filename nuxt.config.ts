@@ -26,7 +26,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:image',
-          content: 'https://cdn.voracious.dev/og/default.png',
+          content: 'https://cdn.davidmyers.dev/og/default.png',
         },
         {
           property: 'og:title',
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:url',
-          content: 'https://voracious.dev',
+          content: 'https://davidmyers.dev',
         },
         {
           name: 'twitter:card',
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         ({
           async: true,
           defer: true,
-          src: 'https://neon-instant.voracious.dev/script.js',
+          src: 'https://neon-instant.davidmyers.dev/script.js',
           'data-site': process.env.NODE_ENV === 'production' ? 'XUGBCQTL' : '',
         }),
       ],
@@ -110,7 +110,7 @@ export default defineNuxtConfig({
       },
     },
     public: {
-      baseUrl: 'https://voracious.dev',
+      baseUrl: 'https://davidmyers.dev',
     },
   },
   sourcemap: true,

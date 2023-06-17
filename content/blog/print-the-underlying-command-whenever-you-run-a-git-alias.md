@@ -43,6 +43,6 @@ git log --graph --oneline --max-count 3 # <- the underlying command
 * f235f4f Add support for comments with Giscus
 ```
 
-Now, one problem with this approach compared to the typical `l = log`{lang="ini"} format above is that tab completion is broken. Check out [How to fix tab completion for complex Git aliases](https://voracious.dev/blog/how-to-fix-tab-completion-for-complex-git-aliases) to learn more about how to fix it!
+Now, one problem with this approach compared to the typical `l = log`{lang="ini"} format above is that tab completion is broken. Check out [How to fix tab completion for complex Git aliases](https://davidmyers.dev/blog/how-to-fix-tab-completion-for-complex-git-aliases) to learn more about how to fix it!
 
 If you found this post useful, have a question, or just want to say hi, please leave a comment down below. Thanks for reading, and happy coding. ✌️

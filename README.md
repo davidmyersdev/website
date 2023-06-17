@@ -1,3 +1,3 @@
-# voracious.dev
+# davidmyers.dev
 
 My website

@@ -6,7 +6,7 @@ createdAt: 2022-08-01T20:58:44.231Z
 updatedAt: 2022-08-01T20:58:44.231Z
 ---
 
-In an earlier post, I talked about how to [print the underlying commands for your Git aliases](https://voracious.dev/blog/print-the-underlying-command-whenever-you-run-a-git-alias) when you run them by utilizing "complex" aliases. This can lead to a better pairing experience, but it can come with a cost when implemented improperly: **broken tab completion**.
+In an earlier post, I talked about how to [print the underlying commands for your Git aliases](https://davidmyers.dev/blog/print-the-underlying-command-whenever-you-run-a-git-alias) when you run them by utilizing "complex" aliases. This can lead to a better pairing experience, but it can come with a cost when implemented improperly: **broken tab completion**.
 
 <!-- more -->
 

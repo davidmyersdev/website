@@ -5,7 +5,7 @@ useHead({
   meta: [
     {
       property: 'og:image',
-      content: `https://cdn.voracious.dev/og/content/${series}.png`,
+      content: `https://cdn.davidmyers.dev/og/content/${series}.png`,
     },
   ],
 })

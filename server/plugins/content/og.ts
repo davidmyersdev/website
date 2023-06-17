@@ -30,7 +30,7 @@ const makeImage = async ({ lines, output }: { lines: string[], output: string })
     const logo = await sharp(appConfig.assets.logo).resize(60, 60).toBuffer()
     const site = Buffer.from(`
       <svg width="1920" height="80" viewBox="0 0 1920 80">
-        <text font-family="Inter" x="50%" y="50" alignment-baseline="after-edge" text-anchor="middle" style="font-size: 60px;" fill="#aaaaaa">voracious.dev</text>
+        <text font-family="Inter" x="50%" y="50" alignment-baseline="after-edge" text-anchor="middle" style="font-size: 60px;" fill="#aaaaaa">davidmyers.dev</text>
       </svg>
     `)
     const title = Buffer.from(`
