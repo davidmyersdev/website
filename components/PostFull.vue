@@ -30,7 +30,7 @@ const { path } = defineProps({ path: String })
         <aside v-if="doc.wip" class="text-gray-400"><em>This article is a work in progress and might not be finished yet.</em></aside>
       </article>
     </ContentDoc>
-    <Newsletter />
+    <Newsletter v-if="false" />
     <Comments />
   </div>
 </template>
