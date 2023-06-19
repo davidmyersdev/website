@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         ({
           async: true,
           defer: true,
-          src: 'https://neon-instant.davidmyers.dev/script.js',
+          src: 'https://cdn.usefathom.com/script.js',
           'data-site': process.env.NODE_ENV === 'production' ? 'XUGBCQTL' : '',
         }),
       ],
