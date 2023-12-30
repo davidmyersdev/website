@@ -6,7 +6,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <nav class="flex flex-col justify-between bg-darkest mb-12 gap-2 lg:mb-20 lg:gap-8 lg:flex-row">
+  <nav class="flex flex-col justify-between bg-darkest mb-12 gap-2 lg:mb-20 lg:gap-8 lg:flex-row sticky top-0 z-10">
     <div class="flex items-center justify-between">
       <div class="flex items-center">
         <NuxtLink class="p-4" to="/">David Myers | Dev</NuxtLink>
