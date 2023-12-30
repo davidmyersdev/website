@@ -14,7 +14,9 @@ export interface ContentFile {
 
 export default defineNitroPlugin((nitro: NitroApp) => {
   nitro.hooks.hook('content:file:afterParse', async (file: ContentFile) => {
-    await series(file)
-    await og(file)
+    if (process.env.NODE_ENV === 'production') {
+      await series(file)
+      await og(file)
+    }
   })
 })
