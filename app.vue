@@ -17,11 +17,14 @@ const toggleMenu = () => {
         </svg>
       </button>
     </div>
-    <div :class="{ 'hidden': !showMenu }" class="flex flex-col items-center pb-4 lg:flex lg:flex-row lg:pb-0">
-      <a class="p-4" href="https://twitter.com/davidmyersdev" rel="noopener" target="_blank">Twitter</a>
+    <div :class="{ 'hidden': !showMenu }" class="flex flex-col items-center gap-2 pb-4 lg:flex lg:flex-row lg:pb-0">
       <a class="p-4" href="https://github.com/davidmyersdev" rel="noopener" target="_blank">GitHub</a>
+      <a class="p-4" href="https://linkedin.com/in/davidmyersdev" rel="noopener" target="_blank">LinkedIn</a>
       <a class="p-4" href="https://octo.app" rel="noopener" target="_blank">Octo</a>
-      <a class="p-4 text-[#fcdf51]" href="https://war.ukraine.ua/support-ukraine/" rel="noopener" target="_blank">Support Ukraine</a>
+      <a class="m-2 px-2 py-1 inline-flex items-center gap-2 bg-[#FF5E5B] rounded text-white" href="https://ko-fi.com/davidmyersdev" rel="noopener" target="_blank">
+        <img src="/assets/kofi-logo.png" class="h-[1em]" />
+        <span>Support me on Ko-fi</span>
+      </a>
     </div>
   </nav>
   <main class="px-5 pb-24 text-sm max-w-[75ch] w-full mx-auto lg:text-base">
