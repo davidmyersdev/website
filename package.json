@@ -20,6 +20,7 @@
     "chalk": "^5.0.1",
     "codemirror": "^6.0.1",
     "eslint": "^8.23.0",
+    "eslint-config-artisan": "^0.3.0",
     "luxon": "^3.0.3",
     "nuxt": "^3.3.3",
     "sharp": "^0.31.0",
@@ -36,5 +37,8 @@
     "lint": "eslint .",
     "postinstall": "nuxi prepare"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "nanoid": "^5.0.5"
+  }
 }
